@@ -427,3 +427,4 @@ var VeloSlider = function () {
 // INIT
 VeloSlider.init();
 //# sourceURL=pen.js
+
