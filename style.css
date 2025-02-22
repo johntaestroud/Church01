@@ -452,8 +452,15 @@ h1, h2, h3, h4, h5, h6 {
 /* outer border */
 .velo-slides[data-velo-theme=light] {
   /* background: #212121; */
-  background: var(--dark-blue);
+  /* background: var(--dark-blue); */
   border: 1em solid #fff;
+  
+  background-color: var(--dark-blue);
+  background-image: url('images/church1.PNG');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center; 
+ 
 }
 /* .velo-slides[data-velo-theme=light] .velo-slide {
   margin-top: -1em;
@@ -818,7 +825,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .marker {
     position: absolute;
-    z-index: 999;
+    z-index: 2;
     top: 187px;
     left: 260px;
     /* font-size: 0; */
