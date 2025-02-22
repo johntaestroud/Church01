@@ -818,7 +818,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .marker {
     position: absolute;
-    z-index: 5;
+    z-index: 999;
     top: 187px;
     left: 260px;
     /* font-size: 0; */
