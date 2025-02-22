@@ -424,6 +424,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.1em;
   line-height: 1.8;
   font-weight: 500;
+  z-index: 1;
 }
 .velo-slide__btn {
   opacity: 0;
@@ -920,11 +921,11 @@ h1, h2, h3, h4, h5, h6 {
       transform: translate(-50%, -50%);
     background: #ff0000;
   }
-  @media only screen and (max-width: 800px) {
+  /* @media only screen and (max-width: 838px) {
     .frame {
         display: none;
     }
-  }
+  } */
   
   @keyframes hovering {
     from {
