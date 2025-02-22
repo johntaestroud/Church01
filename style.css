@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
 .velo-slide__header {
   z-index: 9;
   position: relative;
-  /* height: 100%; */
+  height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -380,13 +380,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 6%;
 }
 
-.velo-slide__header {
-    height: 100%;
-}
-.velo-slide__pretitle {
+/* .velo-slide__pretitle {
   color: #fff;
   max-width: 22em;
-}
+} */
 @media (min-width: 54em) {
   .velo-slide__pretitle {
     margin-left: 7%;
@@ -805,7 +802,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--white-color);
     /* box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6); */
       /* border: 5px solid #111; */
-    overflow: hidden;
+    /* overflow: hidden; */
     /* font-family: 'Open Sans', Helvetica, sans-serif; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
