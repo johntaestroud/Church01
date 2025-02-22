@@ -424,9 +424,21 @@ var VeloSlider = function () {
 
 }();
 
+
+
 // INIT
 VeloSlider.init();
 //# sourceURL=pen.js
+
+$('.marker').bind('click', function() {
+	$('.card').addClass('active');
+	$('.marker').addClass('inactive');
+});
+
+$('.card').bind('click', function() {
+	$('.card').removeClass('active');
+	$('.marker').removeClass('inactive');
+});
 
 // Permission is hereby granted, free of charge, to any person 
 // obtaining a copy of this software and associated documentation 
