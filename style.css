@@ -454,7 +454,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--dark-blue);
   border: 1em solid #fff;
 }
-.velo-slides[data-velo-theme=light] .velo-slide {
+/* .velo-slides[data-velo-theme=light] .velo-slide {
   margin-top: -1em;
 }
 .velo-slides[data-velo-theme=light] .velo-slide__bg {
@@ -467,7 +467,7 @@ h1, h2, h3, h4, h5, h6 {
 [data-velo-theme=dark] .velo-slides__bg {
   background-color: #111;
   filter: grayscale(100%);
-}
+} */
 
 .oh {
   /* display: block; */
@@ -796,7 +796,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 400px;
     height: 400px;
     margin-top: -200px;
-    margin-left: -100px;
+    margin-left: -200px;
     border-radius: 2px;
     color: var(--white-color);
     /* box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6); */
