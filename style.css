@@ -371,13 +371,17 @@ h1, h2, h3, h4, h5, h6 {
 .velo-slide__header {
   z-index: 9;
   position: relative;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   overflow-y: hidden;
   padding: 6%;
+}
+
+.velo-slide__header {
+    height: 100%;
 }
 .velo-slide__pretitle {
   color: #fff;
@@ -796,7 +800,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 400px;
     height: 400px;
     margin-top: -200px;
-    margin-left: -200px;
+    margin-left: -160px;
     border-radius: 2px;
     color: var(--white-color);
     /* box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6); */
@@ -847,7 +851,7 @@ h1, h2, h3, h4, h5, h6 {
             animation: shadow 1s ease-in-out infinite alternate;
   }
   
-  .card {
+  /* .card {
     position: absolute;
     z-index: 10;
     width: 240px;
@@ -920,7 +924,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 50%;
       transform: translate(-50%, -50%);
     background: #ff0000;
-  }
+  } */
   /* @media only screen and (max-width: 838px) {
     .frame {
         display: none;
