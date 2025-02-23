@@ -88,7 +88,7 @@ a {
 }
 
 .btn-draw {
-  color: #ff0000;
+  color: #e14545;
   margin-left: 2.3em;
 }
 .btn-draw:after {
@@ -97,7 +97,7 @@ a {
   right: 0;
   height: 1px;
   width: 100%;
-  background-color: #ff0000;
+  background-color: #e14545;
 }
 .btn-draw:before {
   content: "";
@@ -106,7 +106,7 @@ a {
   left: -2.4em;
   height: 1px;
   width: 3em;
-  background-color: #ff0000;
+  background-color: #e14545;
   transition: all 0.25s ease;
 }
 .btn-draw .btn-draw__text {
@@ -121,7 +121,7 @@ a {
   position: absolute;
   height: 1px;
   width: 0;
-  background-color: #ff0000;
+  background-color: #e14545;
 }
 .btn-draw .btn-draw__text:before {
   top: 0;
@@ -138,7 +138,7 @@ a {
   position: absolute;
   height: 0;
   width: 1px;
-  background-color: #ff0000;
+  background-color: #e14545;
   transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
 }
 .btn-draw .btn-draw__text > span:before {
@@ -154,7 +154,7 @@ a {
 @media (hover) {
   .btn-draw:hover, a:hover .btn-draw {
     cursor: pointer;
-    color: #ff0000;
+    color: #e14545;
   }
   .btn-draw:hover:before, a:hover .btn-draw:before {
     width: 0;
@@ -193,7 +193,7 @@ a {
 .btn-draw.btn--white .btn-draw__text:after,
 .btn-draw.btn--white .btn-draw__text > span:before,
 .btn-draw.btn--white .btn-draw__text > span:after {
-  background-color: #ff0000;
+  background-color: #e14545;
 }
 .btn-draw.btn--white:hover, a:hover .btn-draw.btn--white {
   color: #fff;
@@ -722,7 +722,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   color: rgba(255, 255, 255, 0.9);
   transition: color 0.5s ease, text-shadow 0.5s ease;
-  color: red;
+  color: #e14545;
 }
 .velo-slides-nav a:hover {
   color: white;
@@ -842,7 +842,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .marker svg {
-    fill: #ff0000;
+    fill: #e14545;
             animation: hovering 1s ease-in-out infinite alternate;
   }
   
