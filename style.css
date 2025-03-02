@@ -449,13 +449,13 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate3d(0, 0, 0);
   transition: transform 0.4s ease, opacity 0.8s ease;
 }
-/* outer border */
-.velo-slides[data-velo-theme=light] {
+/* outer border [data-velo-theme=light]*/
+.velo-slides {
   /* background: #212121; */
   /* background: var(--dark-blue); */
   border: 1em solid #fff;
   
-  background-color: var(--dark-blue);
+  background-color: var(--white-color);
   background-image: url('images/church.png');
     background-size: 50%;
     background-repeat: no-repeat;
