@@ -11,6 +11,7 @@
     --white-color: hsl(0, 0%, 100%);
     --body-color: hsl(206deg 22.72% 48.68%);
     --darker-body-color: hsl(206deg 22% 41%);
+    --dark-blue: hsl(233deg 47.66%, 20.98%);
     --container-color: hsl(var(--hue-color), 4%, 10%);
     /* --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 24%), hsl(var(--hue-color), 4%, 8%)); */
     --text-gradient: linear-gradient(hsl(var(--hue-color), 43.04%, 30.39%), hsl(var(--hue-color), 48.47%, 31.75%));
@@ -75,7 +76,8 @@
   
   .header-background {
     /* background-image: url(""); */
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
+    background-color: var(--dark-blue);
     height: 200px;
     background-position: center right;
     background-size: cover;
@@ -104,7 +106,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-align: center;
-    background-color: var(--body-color) !important;
+    background-color: var(--dark-blue) !important;
     position: relative;
     overflow: hidden;
   }
@@ -114,7 +116,7 @@
     top: 100%;
     width: 100%;
     height: 100%;
-    background-color: var(--body-color) !important;
+    background-color: var(--dark-blue) !important;
     transition: top 0.5s cubic-bezier(1, 0, 0, 1);
     padding: 0 5px 0 5px;
   }
@@ -325,7 +327,7 @@
     position: fixed;
     z-index: 99;
     width: 100%;
-    background-color: var(--body-color) !important;
+    background-color: var(--dark-blue) !important;
   }
   
   .mobile-header a i {
@@ -361,7 +363,7 @@
        background-color: #EEEEEE !important;
     }
     .sidebar-title {
-       background-color: var(--body-color) !important;
+       background-color: var(--dark-blue) !important;
     }
     .empty-message {
        color: black;
