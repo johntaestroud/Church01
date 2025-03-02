@@ -348,7 +348,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   width: 100%;
   opacity: 0.4;
-  background: #111;
+  background: var(--dark-blue);
 }
 .is-hovering .velo-slide__vid-wrap {
   transform: scale(1.1);
