@@ -464,13 +464,12 @@ h1, h2, h3, h4, h5, h6 {
   /* background: #212121; */
   /* background: var(--dark-blue); */
   border: 1em solid #fff;
-  
+
   background-color: var(--white-color);
   background-image: url('images/church.png');
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center center; 
- 
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center center; 
 }
 /* .velo-slides[data-velo-theme=light] .velo-slide {
   margin-top: -1em;
