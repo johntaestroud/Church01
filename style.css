@@ -187,6 +187,7 @@ a {
 /* text */
 .btn-draw.btn--white {
   color: #fff;
+  font-weight: 600;
 }
 
 .btn-draw.btn--dark-blue {
