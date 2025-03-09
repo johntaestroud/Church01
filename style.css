@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 8;
   position: relative;
   height: 100vh;
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
 }
 .velo-slides[data-velo-slider=on] {
   overflow: hidden;
