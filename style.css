@@ -294,6 +294,14 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 8;
 }
 /* mid bg */
+.church-logo {
+  background-image: url('images/church.png');
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+
 .velo-slide__bg {
   z-index: 7;
   position: absolute;
@@ -402,7 +410,7 @@ h1, h2, h3, h4, h5, h6 {
 /* church title */
 .velo-slide__title {
   margin-bottom: 0.1em;
-  line-height: 1.1;
+  line-height: 0;
   color: var(--dark-blue);
   /* color: var(--title-color); */
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
@@ -431,7 +439,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--white-color);
   max-width: 45em;
   display: block;
-  margin: 1em 0 1.5em 1%;
+  margin: 1em 0 1.5em 3%;
   font-size: 1.1em;
   line-height: 1.8;
   font-weight: 500;
@@ -822,15 +830,15 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 2px;
     color: var(--white-color);
     /* box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6); */
-      /* border: 5px solid #111; */
-    /* overflow: hidden; */
+      /* border: 5px solid var(--dark-blue);  */
+    overflow: hidden;
     /* font-family: 'Open Sans', Helvetica, sans-serif; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-      /* background-image: var(--body-color), url('');
+          background-image: var(--body-color), url('');
           background-size: cover;
           background-repeat: no-repeat;
-          background-position: center center; */
+          background-position: center center; 
   }
   
   .map svg {
