@@ -909,6 +909,7 @@ button[disabled] {
   color: #fff;
   transition: color 0.3s ease, opacity 0.3s ease 0.65s;
   z-index: 7;
+  left: 10%;
 }
 .main-hero-text .content {
   padding-left: 60px;
@@ -916,6 +917,7 @@ button[disabled] {
 .main-hero-subtitle {
   font-weight: 600;
   margin-bottom: 25px;
+  margin-left: 213px;
 }
 .logo-mask {
   position: absolute;
@@ -1106,7 +1108,7 @@ button[disabled] {
   margin-right: 0;
 }
 .hero-single-context-stripe .context-stripe-focus-area li strong {
-  color: #f06449;
+  color: var(--white-sp-color);
 }
 .hero-single-context-stripe .context-stripe-focus-area li:nth-child(2) {
   text-align: center;
@@ -1402,7 +1404,7 @@ button[disabled] {
 }
 .cookie-banner p .confirm-cookies,
 .cookie-banner p a {
-  color: #f06449;
+  color: var(--white-sp-color);
   cursor: pointer;
   text-decoration: underline;
 }
@@ -1515,7 +1517,7 @@ button[disabled] {
   transform: rotate(180deg);
 }
 #shapes-mask .pink {
-  stroke: #f06449;
+  stroke: var(--white-sp-color);
   fill: none;
 }
 #shapes-mask .yellow {
@@ -2107,7 +2109,7 @@ textarea {
   z-index: 10;
 }
 .the-form .input:after {
-  background: #f06449;
+  background: var(--white-sp-color);
   z-index: 9;
 }
 .the-form .input:nth-child(3):after,
@@ -2161,7 +2163,7 @@ textarea {
   animation: stripe 1.8s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s infinite;
 }
 .form-loader-before {
-  background-color: #f06449;
+  background-color: var(--white-sp-color);
   z-index: 19;
 }
 .form-loader-content {
@@ -2569,7 +2571,7 @@ textarea {
 }
 @media only screen and (min-width: 64em) {
   .experiment:first-child .experiment-image {
-    background-image: url(images/churchfire.svg);
+    background-image: url(/images/);
   }
   .experiment:nth-child(2) .experiment-image {
     background-image: url(../img/search-context.gif);
@@ -3276,7 +3278,7 @@ textarea {
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: #f06449;
+  background-color: var(--white-sp-color);
   z-index: 61;
 }
 .page-transition-content {
@@ -3531,7 +3533,7 @@ main {
     transform: scale(1.4);
   }
   .circle1 svg circle {
-    stroke: #f06449;
+    stroke: var(--white-sp-color);
   }
   .square1 {
     position: absolute;
@@ -3576,7 +3578,7 @@ main {
     transform: scale(1.4);
   }
   .circle2 svg circle {
-    stroke: #f06449;
+    stroke: var(--white-sp-color);
   }
   .square2 {
     position: absolute;
@@ -3646,7 +3648,7 @@ main {
     height: 70px;
   }
   .cross3 svg path {
-    fill: #f06449;
+    fill: var(--white-sp-color);
   }
 }
 .about-contact {
@@ -3794,7 +3796,7 @@ main {
   transition: all 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
 }
 .close-contact span:before {
-  background-color: #f06449;
+  background-color: var(--white-sp-color);
   transition: all 0.3s ease;
 }
 .close-contact span:after,
@@ -3852,7 +3854,7 @@ main {
   font-size: 1.1em;
 }
 .about-me-text strong {
-  color: #f06449;
+  color: var(--white-sp-color);
 }
 .about-me-list {
   margin: 0;
@@ -4165,7 +4167,7 @@ main {
 .single-work-content-desc a,
 .single-work-content-desc span,
 .single-work-content-desc strong {
-  color: #f06449;
+  color: var(--white-sp-color);
 }
 .single-work-content-desc a {
   text-decoration: underline;
@@ -4241,7 +4243,7 @@ main {
   box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.23);
 }
 .color-palette-section .color-palette-container:hover .color-palette-name {
-  color: #f06449;
+  color: var(--white-sp-color);
 }
 .single-work-font {
   float: left;
@@ -4299,7 +4301,7 @@ main {
   transform: translateY(-100%);
 }
 .next-work:before {
-  background-color: #f06449;
+  background-color: var(--white-sp-color);
   transition-delay: 0.12s;
   z-index: 2;
 }
@@ -4331,7 +4333,7 @@ main {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #f06449;
+  background-color: var(--white-sp-color);
   z-index: -1;
 }
 .next-work .next-work-arrow {
@@ -4652,7 +4654,7 @@ main {
 #go-home {
   display: inline-block;
   padding-right: 20px;
-  color: #f06449;
+  color: var(--white-sp-color);
 }
 #go-home + a {
   text-decoration: underline;
@@ -4692,7 +4694,7 @@ main {
   animation-duration: 57.6s;
 }
 .box-404:nth-child(1) svg path {
-  fill: #f06449;
+  fill: var(--white-sp-color);
 }
 .box-404:nth-child(2) {
   top: 50%;
