@@ -16,7 +16,9 @@
   --text-gradient-alt: linear-gradient(hsl(var(--hue-color), 43.04%, 30.39), hsl(var(--hue-color), 14.01%, 41.04%));
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
   --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
-  --dark-blue: hsl(233, 47.66%, 20.98%);
+  --dark-blue: hsl(213, 92%, 15%);
+  --logo-color: 	hsl(11, 79%, 57%);
+  --white-sp-color: hsl(0, 0%, 92%);
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 5rem;
@@ -308,7 +310,8 @@ h4,
 h5,
 h6 {
   font-family: League Spartan, Helvetica, Arial, sans-serif;
-  color: inherit;
+  /* color: inherit; */
+  color: var(--dark-blue);
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -741,7 +744,7 @@ button[disabled] {
   letter-spacing: 3px;
   padding: 12px 20px;
   background-color: var(--dark-blue);
-  background: linear-gradient(270deg, hsl(206deg 100% 22.26%), var(--darker-body-color));
+  background: linear-gradient(270deg, var(--dark-blue), var(--logo-color));
   color: #fff;
   position: relative;
   transition: all 0.3s;
@@ -813,9 +816,10 @@ button[disabled] {
 .the-button .button-icon svg path {
   fill: #484b5f;
 }
-.the-button.call-to-button .button-icon svg path {
-  fill: #fff;
-}
+/* arrow about us */
+/* .the-button.call-to-button .button-icon svg path {
+  fill: hsl(213, 92%, 15%);
+} */
 .the-button:hover .button-mask:before {
   transition: -webkit-transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
   transition: transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
@@ -872,7 +876,7 @@ button[disabled] {
 }
 .main-hero {
   height: 100vh;
-  background: var(--dark-blue);
+  background: var(--white-sp-color);
   overflow: hidden;
   transition: all 0.3s ease;
 }
@@ -1254,7 +1258,7 @@ button[disabled] {
   }
 }
 .bright-theme .main-hero {
-  background: #ebebeb;
+  background: var(--white-sp-color);
 }
 .bright-theme .main-hero-text {
   color: #4c4f65;
@@ -1550,9 +1554,9 @@ button[disabled] {
   -webkit-transform: translateY(-120%) !important;
   transform: translateY(-120%) !important;
 }
-.main-navigation.view-in-scroll {
+/* .main-navigation.view-in-scroll {
   background: rgba(28, 29, 37, 0.9);
-}
+} */
 .nav-logo {
   float: left;
   padding: 10px 0;
@@ -1598,7 +1602,7 @@ button[disabled] {
   padding: 10px 0;
   font-family: League Spartan, Helvetica, Arial, sans-serif;
   position: relative;
-  color: #b0b2c3;
+  color: var(--dark-blue);
   transition: color 0.35s ease;
 }
 .nav-links a svg {
@@ -1606,7 +1610,7 @@ button[disabled] {
   height: 20px;
 }
 .nav-links a svg path {
-  fill: #b0b2c3;
+  fill: var(--dark-blue);
   transition: all 0.25s;
 }
 .nav-links a .nav-link-icon {
@@ -1628,7 +1632,7 @@ button[disabled] {
   height: 26px;
 }
 .nav-links a .nav-link-icon svg path {
-  fill: #b0b2c3;
+  fill: var(--dark-blue);
   transition: all 0.25s;
 }
 .nav-links a:before {
@@ -1754,7 +1758,7 @@ button[disabled] {
 .mobile-menu:before {
   transition-delay: 0.25s;
   background-color: var(--dark-blue);
-  background: linear-gradient(270deg, #ee2828, var(--white-color));
+  background: linear-gradient(270deg, #ee2828, #ebebeb);
   z-index: 24;
 }
 .mobile-menu:after {
@@ -1798,7 +1802,7 @@ button[disabled] {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #dbdce4;
+  background-color: var(--dark-blue);
   margin-bottom: 6px;
   position: relative;
 }
@@ -2691,15 +2695,15 @@ textarea {
       -webkit-transform 0.58s cubic-bezier(0.694, 0.048, 0.335, 1);
   }
   .experiments-mask-reveal span:first-child {
-    background-color: var(--cornsilk-color);
+    /* background-color: var(--cornsilk-color); */
     /* background: linear-gradient(270deg, var(--cornsilk-color), #ef3636); */
-    background: var(--white-color);
+    /* background: var(--white-color); */
     z-index: 15;
   }
   .experiments-mask-reveal span:last-child {
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
     /* background: linear-gradient(270deg, var(--dark-blue), #26408b); */
-    background: var(--dark-blue);
+    /* background: var(--dark-blue); */
     transition-delay: 0.22s;
     z-index: 14;
   }
