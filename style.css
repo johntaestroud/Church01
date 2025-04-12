@@ -16,7 +16,7 @@
   --text-gradient-alt: linear-gradient(hsl(var(--hue-color), 43.04%, 30.39), hsl(var(--hue-color), 14.01%, 41.04%));
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
   --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
-  --dark-blue: hsl(233deg 47.66%, 20.98%);
+  --dark-blue: hsl(233, 47.66%, 20.98%);
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 5rem;
@@ -1753,8 +1753,8 @@ button[disabled] {
 }
 .mobile-menu:before {
   transition-delay: 0.25s;
-  background-color: #f06449;
-  background: linear-gradient(270deg, #f06449, #ee2828);
+  background-color: var(--dark-blue);
+  background: linear-gradient(270deg, #ee2828, var(--white-color));
   z-index: 24;
 }
 .mobile-menu:after {
@@ -2691,13 +2691,15 @@ textarea {
       -webkit-transform 0.58s cubic-bezier(0.694, 0.048, 0.335, 1);
   }
   .experiments-mask-reveal span:first-child {
-    background-color: #f06449;
-    background: linear-gradient(270deg, #f06449, #ef3636);
+    background-color: var(--cornsilk-color);
+    /* background: linear-gradient(270deg, var(--cornsilk-color), #ef3636); */
+    background: var(--white-color);
     z-index: 15;
   }
   .experiments-mask-reveal span:last-child {
     background-color: var(--dark-blue);
-    background: linear-gradient(270deg, var(--dark-blue), #26408b);
+    /* background: linear-gradient(270deg, var(--dark-blue), #26408b); */
+    background: var(--dark-blue);
     transition-delay: 0.22s;
     z-index: 14;
   }

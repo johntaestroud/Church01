@@ -2619,7 +2619,7 @@ function newFunction() {
                 },
                 r = function() {
                     t(document).on("click", "#all-works", function(i) {
-                        i.preventDefault(), e.addClass("is-hidden"), t("body").addClass("is-works-open overflow"), Util.sendGAEvent("Case Study", "Open Index Case Studies", !1);
+                        i.preventDefault(), e.addClass("is-hidden"), t("body").addClass("is-works-open overflow"), Util.sendGAEvent("testing", "Open Index testing", !1);
                     });
                 },
                 s = function() {
@@ -2643,7 +2643,7 @@ function newFunction() {
                 },
                 l = function() {
                     t(document).on("click", ".case-study", function(t) {
-                        Util.sendGAEvent("Case Study", "Click on Home Case Study", t.currentTarget.id);
+                        Util.sendGAEvent("testing", "testing", t.currentTarget.id);
                     });
                 },
                 u = function() {
