@@ -744,8 +744,8 @@ button[disabled] {
   letter-spacing: 3px;
   padding: 12px 20px;
   background-color: var(--dark-blue);
-  background: linear-gradient(270deg, var(--dark-blue), var(--logo-color));
-  color: #fff;
+  /* background: linear-gradient(270deg, var(--dark-blue), var(--logo-color)); */
+  color: var(--logo-color);
   position: relative;
   transition: all 0.3s;
 }
