@@ -17,7 +17,9 @@
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
   --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
   --dark-blue: hsl(213, 92%, 15%);
-  --logo-color: 	hsl(11, 79%, 57%);
+  --logo-color: 	hsla(11, 92%, 43%, 0.884);
+  /* --logo-color: 	hsl(11, 79%, 57%); */
+  --gold-sp-color: 	hsl(18, 22%, 61%);
   --white-sp-color: hsl(0, 0%, 92%);
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -310,7 +312,7 @@ h4,
 h5,
 h6 {
   font-family: League Spartan, Helvetica, Arial, sans-serif;
-  /* color: inherit; */
+  color: inherit;
   color: var(--dark-blue);
   margin-top: 0;
   padding-top: 0;
@@ -744,8 +746,8 @@ button[disabled] {
   letter-spacing: 3px;
   padding: 12px 20px;
   background-color: var(--dark-blue);
-  /* background: linear-gradient(270deg, var(--dark-blue), var(--logo-color)); */
-  color: var(--logo-color);
+  /* background: linear-gradient(270deg, var(--dark-blue),  hsl(216.55deg 26.25% 36.51%)); */
+  color: var(--white-sp-color);
   position: relative;
   transition: all 0.3s;
 }
@@ -1651,11 +1653,11 @@ button[disabled] {
   z-index: 2;
 }
 .nav-links a:after {
-  background-color: #f25757;
+  background-color: var(--dark-blue);
   transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1);
 }
 .nav-links a:hover {
-  color: #fff;
+  color: var(--logo-color);
   text-decoration: none;
 }
 @media only screen and (min-width: 64em) {
@@ -3723,7 +3725,7 @@ main {
 .about-contact .half-contact.is-contact {
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
-  background-color: rgba(28, 29, 37, 0.985);
+  background-color: var(--dark-blue);
   left: auto;
   right: 0;
   transition: opacity 0.3s,
@@ -3734,7 +3736,7 @@ main {
   z-index: 59;
 }
 .about-contact .half-contact.is-contact .contact-info {
-  color: #dadada;
+  color: var(--logo-color);
 }
 .about-contact .half-contact.is-contact .giga-text {
   bottom: -30px;
@@ -3750,7 +3752,7 @@ main {
   font-size: 190px;
   position: absolute;
   opacity: 0.07;
-  font-family: League Spartan, Helvetica, Arial, sans-serif;
+  /* font-family: League Spartan, Helvetica, Arial, sans-serif; */
   z-index: 0;
 }
 .is-contact-open .about-contact {
