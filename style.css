@@ -971,7 +971,7 @@ button[disabled] {
   transform: translateX(-50%);
   bottom: 10px;
   padding: 20px;
-  color: #fff;
+  color: var(--gold-sp-color);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: opacity 0.35s ease 0.7s;
@@ -1572,7 +1572,7 @@ button[disabled] {
   width: 1px;
 }
 .nav-logo svg {
-  width: 80px;
+  width: 65px;
   height: 60px;
   position: relative;
   top: 2px;
@@ -2565,11 +2565,11 @@ textarea {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .experiment:nth-child(3) .experiment-image {
-  background-image: url(../img/brick.png);
+  background-image: url();
 }
 @media only screen and (min-width: 64em) {
   .experiment:first-child .experiment-image {
-    background-image: url(../img/codepen-loader.gif);
+    background-image: url(images/churchfire.svg);
   }
   .experiment:nth-child(2) .experiment-image {
     background-image: url(../img/search-context.gif);
