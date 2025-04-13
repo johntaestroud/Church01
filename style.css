@@ -909,7 +909,6 @@ button[disabled] {
   color: #fff;
   transition: color 0.3s ease, opacity 0.3s ease 0.65s;
   z-index: 7;
-  left: 10%;
 }
 .main-hero-text .content {
   padding-left: 60px;
@@ -917,7 +916,6 @@ button[disabled] {
 .main-hero-subtitle {
   font-weight: 600;
   margin-bottom: 25px;
-  margin-left: 213px;
 }
 .logo-mask {
   position: absolute;
@@ -2089,7 +2087,7 @@ textarea {
   position: absolute;
   top: -13px;
   left: 0;
-  font-size: 0.6875em;
+  font-size: 0.8875em;
   font-family: League Spartan, Helvetica, Arial, sans-serif;
   letter-spacing: 2px;
 }
@@ -3738,7 +3736,7 @@ main {
   z-index: 59;
 }
 .about-contact .half-contact.is-contact .contact-info {
-  color: var(--logo-color);
+  color: var(--white-sp-color);
 }
 .about-contact .half-contact.is-contact .giga-text {
   bottom: -30px;

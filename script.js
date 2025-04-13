@@ -2648,7 +2648,7 @@ function newFunction() {
                 },
                 u = function() {
                     var e = t(document).find("title").text(),
-                        i = "Be sure to checkout this before closing the internet :P";
+                        i = "You Still There?";
                     document.addEventListener("visibilitychange", function() {
                         document.hidden ? t(document).find("title").text(i) : t(document).find("title").text(e);
                     });
