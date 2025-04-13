@@ -8,8 +8,8 @@
   --font-size-large: 16pt;
   --cornsilk-color:  hsl(48, 100%, 93%);
   --white-color: hsl(0, 0%, 100%);
-  --body-color: hsl(206deg 22.72% 48.68%);
-  --darker-body-color: hsl(206deg 22% 41%);
+  /* --dark-blue: hsl(206deg 22.72% 48.68%);
+  --darker-body-color: hsl(206deg 22% 41%); */
   --text-gradient: linear-gradient(hsl(var(--hue-color), 43.04%, 30.39%), hsl(var(--hue-color), 48.47%, 31.75%));
   --text-color: hsl(var(--hue-color), 4%, 75%);
   --off-white: whitesmoke;
@@ -19,6 +19,12 @@
   --grey-4: #4d4e53;
   --black: #121212;
   --highlight: var(--grey-2);
+
+  --dark-blue: hsl(213, 92%, 15%);
+  --logo-color: 	hsla(11, 92%, 43%, 0.884);
+  /* --logo-color: 	hsl(11, 79%, 57%); */
+  --gold-sp-color: 	hsl(18, 22%, 61%);
+  --white-sp-color: hsl(0, 0%, 92%);
 
   --page-width: 1000px;
   --nav-min-width: 40px;
@@ -32,7 +38,7 @@
   --shadow-nav: 1px 0 10px var(--grey-3);
   --shadow-btn: -1px 5px 10px var(--grey-3);
 
-  --body-color: hsl(206deg 22.72% 48.68%);
+  --dark-blue: hsl(206deg 22.72% 48.68%);
   --darker-body-color: hsl(206deg 22% 41%);
   --body-font: 'Poppins', sans-serif;
 }
@@ -58,7 +64,7 @@ body {
   font-size: var(--font-size-large);
   font-family: var(--body-font);
   color: var(--white);
-  background-color: var(--body-color);
+  background-color: var(--white-sp-color);
   line-height: 1.5em;
   scroll-behavior: smooth;
   transition: background 0.3s ease;
@@ -140,7 +146,7 @@ code {
   max-height: 10em;
   line-height: 2em;
   border-left: 0.3em solid var(--grey-3);
-  color: var(--body-color);
+  color: var(--dark-blue);
   background-color: var(--off-white);
   overflow-x: auto;
   padding: 0.5em 1em;
@@ -569,7 +575,7 @@ button:active, button:focus {
   font-size: 1em;
   padding: .8em 1.25em .8em 1em;
   margin: 0;
-  color: var(--darker-body-color);
+  color: var(--dark-blue);
   border-left: 0 solid transparent;
   transition:
     background 0.3s ease,
@@ -610,7 +616,7 @@ button:active, button:focus {
 }
 
 .nav-link.selected {
-  border-left: 5px solid var(--darker-body-color);
+  border-left: 5px solid var(--dark-blue);
 }
 
 .nav-link.selected:hover {
@@ -631,7 +637,7 @@ button:active, button:focus {
 
 #main-doc {
   position: relative;
-  background-color: var(--body-color);
+  background-color: var(--dark-blue);
   width: 100%;
   min-width: 300px;
   max-width: var(--page-width);
@@ -691,7 +697,7 @@ button:active, button:focus {
   }
   
   html, body {
-    background-color: var(--body-color);
+    background-color: var(--dark-blue);
     
   }
 

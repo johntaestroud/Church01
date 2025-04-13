@@ -9,7 +9,7 @@
     --text-color-light: hsl(var(--hue-color), 4%, 65%);
     --cornsilk-color:  hsl(48, 100%, 93%);
     --white-color: hsl(0, 0%, 100%);
-    --body-color: hsl(206deg 22.72% 48.68%);
+    --dark-blue: hsl(206deg 22.72% 48.68%);
     --darker-body-color: hsl(206deg 22% 41%);
     --dark-blue: hsl(233deg 47.66%, 20.98%);
     --container-color: hsl(var(--hue-color), 4%, 10%);
@@ -76,7 +76,7 @@
   
   .header-background {
     /* background-image: url(""); */
-    /* background-color: var(--body-color); */
+    /* background-color: var(--dark-blue); */
     background-color: var(--dark-blue);
     height: 200px;
     background-position: center right;
@@ -217,7 +217,7 @@
   .eventCard-mark {
     width: 8px;
     height: 8px;
-    background-color: var(--body-color);
+    background-color: var(--dark-blue);
     border-radius: 100px;
     position: absolute;
     left: 50%;
@@ -227,7 +227,7 @@
   .day-mark {
     width: 7px;
     height: 7px;
-    background-color: var(--body-color);
+    background-color: var(--dark-blue);
     border-radius: 100px;
     position: absolute;
     left: 47%;

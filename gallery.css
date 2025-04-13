@@ -9,7 +9,7 @@
   --text-color-light: hsl(var(--hue-color), 4%, 65%);
   --cornsilk-color:  hsl(48, 100%, 93%);
   --white-color: hsl(0, 0%, 100%);
-  --body-color: hsl(206deg 22.72% 48.68%);
+  --dark-blue: hsl(206deg 22.72% 48.68%);
   --darker-body-color: hsl(206deg 22% 41%);
   --container-color: hsl(var(--hue-color), 4%, 10%);
   --text-gradient: linear-gradient(hsl(var(--hue-color), 43.04%, 30.39%), hsl(var(--hue-color), 48.47%, 31.75%));
