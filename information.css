@@ -37,9 +37,6 @@
   --shadow-inset: 0 0 10px var(--grey-3) inset;
   --shadow-nav: 1px 0 10px var(--grey-3);
   --shadow-btn: -1px 5px 10px var(--grey-3);
-
-  --dark-blue: hsl(206deg 22.72% 48.68%);
-  --darker-body-color: hsl(206deg 22% 41%);
   --body-font: 'Poppins', sans-serif;
 }
 
@@ -52,7 +49,7 @@
   --grey-4: #666;
   --black: #a3a3a3;
   --highlight: #999;
-  
+
   --shadow: 0 0 10px var(--off-white);
   --shadow-nav: 1px 0 10px var(--off-white);
   --shadow-inset: 0 0 10px var(--off-white) inset;
@@ -61,10 +58,10 @@
 
 html,
 body {
-  font-size: var(--font-size-large);
-  font-family: var(--body-font);
-  color: var(--white);
-  background-color: var(--white-sp-color);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  color: var(--dark-blue);
+  background-color: var(--off-white);
   line-height: 1.5em;
   scroll-behavior: smooth;
   transition: background 0.3s ease;
@@ -94,22 +91,27 @@ ul ul li::before {
   margin-left: -1.5em;
 }
 
-ol, ul {
+ol,
+ul {
   margin: 1.5em 0;
   padding-left: 2em;
 }
 
-ol ol, ul ul {
+ol ol,
+ul ul {
   margin: 1em 0;
   padding-left: 1.5em;
 }
 
-ol li, ul li {
+ol li,
+ul li {
   margin: 0.5em 0;
   line-height: 1.5em;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-weight: 400;
   line-height: 1.3em;
   padding: 1em 0 0.5em 0;
@@ -117,8 +119,7 @@ h2, h3, h4 {
 }
 
 h2 {
-  font-size: 1.25em;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  font-size: 2em;
 }
 
 h3 {
@@ -146,7 +147,7 @@ code {
   max-height: 10em;
   line-height: 2em;
   border-left: 0.3em solid var(--grey-3);
-  color: var(--dark-blue);
+  color: var(--main-text-color);
   background-color: var(--off-white);
   overflow-x: auto;
   padding: 0.5em 1em;
@@ -157,15 +158,13 @@ code {
 a {
   position: relative;
   text-decoration: none;
-  color: var(--white-color);
-  transition:
-    background 0.3s ease,
-    color 0.3s ease;
+  color: var(--dark-blue);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 a::before {
-  /* background-color: var(--darker-body-color); */
-  content: '';
+  background-color: var(--dark-blue-light);
+  content: "";
   height: 1px;
   position: absolute;
   bottom: 0;
@@ -180,7 +179,7 @@ a:active,
 a:focus {
   outline: 0 !important;
   text-decoration: none;
-  color: var(--darker-body-color);
+  color: var(--dark-blue-light);
 }
 
 a:hover::before,
@@ -209,7 +208,7 @@ a:focus::before {
 
 .hash-link:hover {
   text-decoration: none;
-  color: var(--primary-light);
+  color: var(--dark-blue-light);
 }
 
 .hash-link:active,
@@ -255,10 +254,7 @@ a:focus::before {
   background-color: var(--white);
   width: 100%;
   height: 3px;
-  transition:
-    left 0.5s ease,
-    right 0.5s ease,
-    width 0.5s ease,
+  transition: left 0.5s ease, right 0.5s ease, width 0.5s ease,
     background-color 0.3s ease;
   z-index: 99999;
 }
@@ -287,7 +283,7 @@ a:focus::before {
 
 #reading-progress {
   height: 100%;
-  background-color: var(--darker-body-color);
+  background-color: var(--dark-blue);
   transition: width 0.1s linear;
 }
 
@@ -295,26 +291,19 @@ a:focus::before {
   transition: width 0.5s ease !important;
 }
 
-button:active, button:focus {
+button:active,
+button:focus {
   outline: 0 !important;
-}
-
-.back_btn {
-  color: var(--darker-body-color) !important;
-  text-decoration: none;
 }
 
 .btn {
   cursor: pointer;
-  /* background-color: var(--grey-1); */
-  color: var(--darker-body-color);
+  background-color: var(--grey-1);
+  color: var(--dark-blue);
   border: none;
   outline: 0 !important;
   border-radius: 0;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    opacity 0.5s ease,
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.5s ease,
     box-shadow 0.3s ease !important;
 }
 
@@ -322,7 +311,8 @@ button:active, button:focus {
   background-color: var(--grey-2) !important;
 }
 
-.btn:active, .btn:focus {
+.btn:active,
+.btn:focus {
   background-color: var(--grey-3) !important;
   color: var(--grey-1) !important;
 }
@@ -352,9 +342,7 @@ button:active, button:focus {
   padding: 5px 7px;
   background: var(--white);
   box-shadow: var(--shadow);
-  transition:
-    box-shadow 0.5s ease,
-    background-color 0.5s ease !important;
+  transition: box-shadow 0.5s ease, background-color 0.5s ease !important;
 }
 
 #settings.nav-left {
@@ -394,8 +382,8 @@ button:active, button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.0em;
-  line-height: 1em;  
+  font-size: 1.1em;
+  line-height: 1em;
   border-radius: 50%;
   padding: 12px;
   margin: 1px 0;
@@ -425,10 +413,7 @@ button:active, button:focus {
   border-radius: 50%;
   visibility: hidden;
   z-index: 9999;
-  transition:
-    right 0.5s ease,
-    left 0.5s ease,
-    background-color 0.5s ease,
+  transition: right 0.5s ease, left 0.5s ease, background-color 0.5s ease,
     color 0.5s ease !important;
 }
 
@@ -458,10 +443,7 @@ button:active, button:focus {
   background-color: var(--white);
   box-shadow: var(--shadow-nav);
   z-index: 9998;
-  transition:
-    width 0.5s ease,
-    height 0s ease,
-    background 0.3s ease,
+  transition: width 0.5s ease, height 0s ease, background 0.3s ease,
     box-shadow 0.3s ease;
 }
 
@@ -502,7 +484,7 @@ button:active, button:focus {
 }
 
 #nav-close-btn.nav-close {
-  background-color: var(--grey-1);
+  background-color: var(--grey-2);
 }
 
 #nav-close-btn.nav-close:hover {
@@ -522,9 +504,7 @@ button:active, button:focus {
   text-align: left;
   font-size: 2em;
   white-space: pre;
-  transition:
-    box-shadow 0.5s ease,
-    color 0.3s ease;
+  transition: box-shadow 0.5s ease, color 0.3s ease;
 }
 
 #navbar ul {
@@ -545,12 +525,12 @@ button:active, button:focus {
 #navbar ul::-webkit-scrollbar {
   width: 10px;
 }
- 
+
 #navbar ul::-webkit-scrollbar-track {
   background: var(--grey-1);
   transition: background 5s ease;
 }
- 
+
 #navbar ul::-webkit-scrollbar-thumb {
   background-color: var(--grey-3);
   border-radius: var(--border-radius);
@@ -567,31 +547,27 @@ button:active, button:focus {
   content: none;
 }
 
-
 /***   Nav Links   ***/
 
 .nav-link {
   cursor: pointer;
   font-size: 1em;
-  padding: .8em 1.25em .8em 1em;
+  padding: 0.8em 1.25em 0.8em 1em;
   margin: 0;
   color: var(--dark-blue);
   border-left: 0 solid transparent;
-  transition:
-    background 0.3s ease,
-    border-left 0.3s ease;
+  transition: background 0.3s ease, border-left 0.3s ease;
   user-select: none;
 }
 
 .nav-link:hover::before,
 .nav-link:active::before,
-.nav-link:focus::before{
+.nav-link:focus::before {
   width: 0;
 }
 
-/* sidebar sections */
 .nav-link.h2 {
-  font-size: 0.8em;
+  font-size: 1em;
   padding-left: 15px;
 }
 
@@ -610,7 +586,8 @@ button:active, button:focus {
   background-color: var(--grey-2);
 }
 
-.nav-link:active, .nav-link:focus {
+.nav-link:active,
+.nav-link:focus {
   outline: 0 !important;
   background-color: var(--grey-2);
 }
@@ -637,7 +614,7 @@ button:active, button:focus {
 
 #main-doc {
   position: relative;
-  background-color: var(--dark-blue);
+  background-color: var(--white);
   width: 100%;
   min-width: 300px;
   max-width: var(--page-width);
@@ -645,10 +622,7 @@ button:active, button:focus {
   padding: 40px 60px;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
-  transition:
-    margin 0.5s ease,
-    background 0.3s ease,
-    color 0.3s ease,
+  transition: margin 0.5s ease, background 0.3s ease, color 0.3s ease,
     box-shadow 0.3s ease;
 }
 
@@ -670,58 +644,50 @@ button:active, button:focus {
 
 @media only screen and (max-width: 1824px) {
   #scroll-btn.nav-left.nav-open {
-    left: calc(50% + (var(--page-width) / 2) + (var(--nav-max-width) / 2) - 90px);
+    left: calc(
+      50% + (var(--page-width) / 2) + (var(--nav-max-width) / 2) - 90px
+    );
     transform: translateX(-50%);
   }
 
   #scroll-btn.nav-left.nav-close {
-    left: calc(50% + (var(--page-width) / 2) + (var(--nav-min-width) / 2) - 90px);
+    left: calc(
+      50% + (var(--page-width) / 2) + (var(--nav-min-width) / 2) - 90px
+    );
     transform: translateX(-50%);
   }
 
   #scroll-btn.nav-right.nav-open {
-    right: calc(50% + (var(--page-width) / 2) + (var(--nav-max-width) / 2) - 90px);
+    right: calc(
+      50% + (var(--page-width) / 2) + (var(--nav-max-width) / 2) - 90px
+    );
     transform: translateX(50%);
   }
 
   #scroll-btn.nav-right.nav-close {
-    right: calc(50% + (var(--page-width) / 2) + (var(--nav-min-width) / 2) - 90px);
+    right: calc(
+      50% + (var(--page-width) / 2) + (var(--nav-min-width) / 2) - 90px
+    );
     transform: translateX(50%);
   }
 }
 
 @media only screen and (max-width: 1224px) {
-  
   :root {
     --nav-max-height: 100vh;
   }
-  
-  html, body {
-    background-color: var(--dark-blue);
-    
+
+  html,
+  body {
+    background-color: var(--white);
   }
 
-  p  {
-    font-size: 2.25em;
-  }
-
-  ol li {
-    font-size: 2.25em;
-  }
-
-  ul li {
-    font-size: 2.25em;
-  }
-
-  h2 {
-    font-size: 2.62em;
-  }
-
-  
-  h2, h3, h4 {
+  h2,
+  h3,
+  h4 {
     margin-top: calc(-1 * var(--nav-min-width));
   }
-  
+
   /* Account for nav when using hash links */
   h2::before,
   h3::before,
@@ -733,16 +699,16 @@ button:active, button:focus {
     visibility: hidden;
     pointer-events: none;
   }
-  
+
   code {
     margin: 0.5em 0;
   }
-  
+
   #reading-bar {
     left: 0;
     right: 0;
   }
-  
+
   #scroll-btn {
     right: 10px;
     bottom: 20px;
@@ -756,7 +722,7 @@ button:active, button:focus {
     min-width: var(--nav-max-width);
     height: var(--nav-min-width);
     box-shadow: var(--shadow-nav);
-    transition: width 0s, height 0.5s;    
+    transition: width 0s, height 0.5s;
   }
 
   #navbar.nav-open {
@@ -764,23 +730,18 @@ button:active, button:focus {
     height: var(--nav-max-height);
     padding-bottom: var(--nav-min-width);
   }
-  
+
   #navbar.nav-close {
     width: 100%;
-    /* height: var(--nav-min-width); */
-    height: 60px;
-    background-color: var(--grey-1);
+    height: var(--nav-min-width);
   }
-  
+
   #nav-close-btn {
     height: var(--nav-min-width);
     width: 100%;
     bottom: 0;
-    font-size: 2.2em;
-    margin-bottom: 30px;
-    background-color: var(--grey-2);
   }
-  
+
   #nav-close-btn.nav-close {
     background-color: var(--grey-1);
   }
@@ -797,7 +758,7 @@ button:active, button:focus {
   #navbar li {
     width: 100%;
   }
-  
+
   #settings-container {
     height: auto;
     width: 100%;
@@ -806,35 +767,34 @@ button:active, button:focus {
     padding: 0;
     transform: none;
   }
-  
-  /* back and dark mode button */
+
   #settings {
     flex-direction: row;
     background-color: var(--grey-1);
     padding: 5px;
-    font-size: 1.3em;
   }
-  
+
   #settings .btn {
     padding: 10px;
     margin: 0 10px;
   }
-  
+
   #nav-side-btn {
     display: none !important;
   }
-  
+
   #zoom-container {
     flex-direction: row-reverse;
     margin: 0;
   }
-  
+
   #main-doc {
-    padding: calc(var(--nav-min-width) + 0.5em) 1.5em calc(var(--nav-min-width) + 1em) 3em;
+    padding: calc(var(--nav-min-width) + 0.5em) 1.5em
+      calc(var(--nav-min-width) + 1em) 3em;
     margin: 0;
     box-shadow: none;
   }
-  
+
   .hash-link .tooltip {
     margin-right: 0;
     margin-bottom: 10px;
@@ -843,9 +803,7 @@ button:active, button:focus {
     top: -60%;
     transform: translateY(-60%);
   }
-
 }
-
 
 @-webkit-keyframes zoomIn {
   from {
