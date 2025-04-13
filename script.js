@@ -2648,7 +2648,7 @@ function newFunction() {
                 },
                 u = function() {
                     var e = t(document).find("title").text(),
-                        i = "Rejoice evermore";
+                        i = "Where did you go?";
                     document.addEventListener("visibilitychange", function() {
                         document.hidden ? t(document).find("title").text(i) : t(document).find("title").text(e);
                     });

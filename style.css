@@ -1760,7 +1760,7 @@ button[disabled] {
 .mobile-menu:before {
   transition-delay: 0.25s;
   background-color: var(--dark-blue);
-  background: linear-gradient(270deg, #ee2828, #ebebeb);
+  background: linear-gradient(var(--dark-blue), var(--white-sp-color));
   z-index: 24;
 }
 .mobile-menu:after {
