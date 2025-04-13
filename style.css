@@ -2534,7 +2534,7 @@ textarea {
 .experiment .experiment-number-mask span {
   position: absolute;
   top: 10px;
-  color: #f25757;
+  color: var(--white-sp-color);
   right: -20px;
   line-height: 1;
   font-size: 8.125em;
