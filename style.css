@@ -881,6 +881,7 @@ button[disabled] {
   background: var(--white-sp-color);
   overflow: hidden;
   transition: all 0.3s ease;
+  
 }
 @media only screen and (max-height: 40.5625em) {
   .main-hero {
@@ -909,9 +910,10 @@ button[disabled] {
   color: #fff;
   transition: color 0.3s ease, opacity 0.3s ease 0.65s;
   z-index: 7;
+  text-align: center;
 }
 .main-hero-text .content {
-  padding-left: 60px;
+  /* padding-left: 60px; */
 }
 .main-hero-subtitle {
   font-weight: 600;
@@ -1007,7 +1009,7 @@ button[disabled] {
   transform: rotate(40deg);
 }
 .go-next-label {
-  font-size: 0.875em;
+  font-size: 1em;
   padding-bottom: 5px;
 }
 .hero-single-work {
@@ -3243,7 +3245,10 @@ textarea {
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: #26408b;
+  /* background-color: var(--dark-blue); */
+  background-image: url('images/cfire.svg');
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 62;
 }
 #page-transition.cerasa {
