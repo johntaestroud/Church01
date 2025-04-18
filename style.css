@@ -3352,7 +3352,8 @@ section:after {
 }
 @media only screen and (max-width: 64em) {
   .content {
-    width: 95%;
+    /* width: 95%; */
+    width: 100%;
   }
 }
 .inner-container {
