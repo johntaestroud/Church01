@@ -3067,8 +3067,8 @@ textarea {
 .footer-logo img,
 .footer-logo svg {
   width: 70px;
-  height: 70px;
-  opacity: 0.8;
+  height: 50px;
+  opacity: 0.6;
 }
 .footer-logo span {
   clip: rect(1px, 1px, 1px, 1px);
