@@ -815,6 +815,14 @@ button:focus {
     font-size: 40px; 
   }
 }
+@media only screen 
+    and (width: 393px) 
+    and (height: 852px) 
+    and (-webkit-device-pixel-ratio: 3) {
+      html, body, p, ul, ol, li {
+        font-size: 40px; 
+      }
+     }
 
 @-webkit-keyframes zoomIn {
   from {
