@@ -2567,30 +2567,30 @@ textarea {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .experiment:nth-child(3) .experiment-image {
-  background-image: url();
+  background-image: url('images/milton.png');
 }
 @media only screen and (min-width: 64em) {
   .experiment:first-child .experiment-image {
-    background-image: url(/images/);
+    background-image: url();
   }
   .experiment:nth-child(2) .experiment-image {
-    background-image: url(../img/search-context.gif);
+    background-image: url('images/pastortroy.png');
   }
   .experiment:last-child .experiment-image {
-    background-image: url(../img/x-times.gif);
+    background-image: url();
   }
 }
-@media only screen and (max-width: 63.9375em) {
+/* @media only screen and (max-width: 63.9375em) {
   .experiment:first-child .experiment-image {
-    background-image: url(../img/codepen-loader.png);
+    background-image: url();
   }
   .experiment:nth-child(2) .experiment-image {
-    background-image: url(../img/search-context.png);
+    background-image: url();
   }
   .experiment:last-child .experiment-image {
-    background-image: url(../img/x-times.png);
+    background-image: url();
   }
-}
+} */
 .experiment .experiment-title-area {
   position: absolute;
   top: 85%;
@@ -3246,9 +3246,9 @@ textarea {
   width: 100%;
   height: 100%;
   /* background-color: var(--dark-blue); */
-  background-image: url('images/cfire.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-image: url('images/cfire.svg'); */
+  /* background-position: center;
+  background-repeat: no-repeat; */
   z-index: 62;
 }
 #page-transition.cerasa {
