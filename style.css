@@ -2500,7 +2500,7 @@ textarea {
   position: relative;
   overflow: hidden;
   text-align: center;
-  background-color: #fff;
+  /* background-color: #fff;  pastor and minister photos */
   box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.15);
   transition: all 0.45s ease;
 }
