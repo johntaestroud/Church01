@@ -2566,21 +2566,25 @@ textarea {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
+.experiment:nth-child(2) .experiment-image {
+  background-image: url('images/pastortroy.png');
+}
 .experiment:nth-child(3) .experiment-image {
   background-image: url('images/milton.png');
 }
+/*
 @media only screen and (min-width: 64em) {
   .experiment:first-child .experiment-image {
     background-image: url();
   }
   .experiment:nth-child(2) .experiment-image {
-    background-image: url('images/pastortroy.png');
+    background-image: url();
   }
   .experiment:last-child .experiment-image {
     background-image: url();
   }
 }
-/* @media only screen and (max-width: 63.9375em) {
+ @media only screen and (max-width: 63.9375em) {
   .experiment:first-child .experiment-image {
     background-image: url();
   }
