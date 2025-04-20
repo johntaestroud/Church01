@@ -3052,7 +3052,7 @@ textarea {
 .footer {
   width: 100%;
   background: var(--dark-blue);
-  padding: 8% 0;
+  /* padding: 8% 0; */
 }
 .footer,
 .footer a {
@@ -3160,9 +3160,9 @@ textarea {
 }
 .footer-copy {
   width: 100%;
-  padding-top: 15px;
+  /* padding-top: 15px; */
   text-align: center;
-  font-size: 0.75em;
+  /* font-size: 0.75em; */
 }
 .footer-copy a:hover {
   text-decoration: none;
