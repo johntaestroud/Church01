@@ -1176,7 +1176,7 @@ button:focus {
 
 @media only screen and (max-width: 600px) {
   html, body, p, ul, ol, li {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
