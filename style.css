@@ -957,12 +957,12 @@ button[disabled] {
   height: 23px;
 }
 .social-vertical-stripe svg path {
-  fill: #b0b2c3;
+  fill: var(--dark-blue);
   transition: fill 0.3s ease;
 }
 .social-vertical-stripe li:focus svg path,
 .social-vertical-stripe li:hover svg path {
-  fill: #fff;
+  fill: var(--logo-color);
 }
 .hero-go-next {
   position: absolute;
