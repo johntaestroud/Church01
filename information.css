@@ -688,11 +688,16 @@ button:focus {
     background-color: var(--white);
     font-size: 40px;
   }
-
+  
+  .fa, 
+  .fas {
+  font-size: 50px;
+}
+  
   p, 
   ul, 
   ol, 
-  li{
+  li {
     font-size: 40px; 
   }
 
