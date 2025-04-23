@@ -67,12 +67,6 @@ body {
   transition: background 0.3s ease;
 }
 
-.fa, .fas {
-  font-weight: 1000;
-  font-size: 60px;
-  padding-top: 13px;
-}
-
 *::selection {
   background-color: var(--highlight);
 }
