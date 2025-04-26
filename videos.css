@@ -79,8 +79,7 @@ main .column.right {
 .video-banner-headline {
   position: absolute;
   left: 1.5rem;
-  bottom: 1.5rem;
-  
+  bottom: 0.2rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.25em;
   font-weight: 900;
