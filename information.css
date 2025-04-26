@@ -686,7 +686,10 @@ button:focus {
   .fa, 
   .fas {
   font-size: 50px;
+<<<<<<< HEAD
   padding-top: 10px;
+=======
+>>>>>>> 10539241c15e710c27f1f154641450f1c6ed9a83
 }
   
   p, 
@@ -1195,3 +1198,11 @@ button:focus {
 
 
 
+<<<<<<< HEAD
+=======
+/* @media only screen and (min-width: 600px) {
+  html, body {
+    font-size: 20px;
+  }
+} */
+>>>>>>> 10539241c15e710c27f1f154641450f1c6ed9a83
