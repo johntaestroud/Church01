@@ -67,12 +67,6 @@ body {
   transition: background 0.3s ease;
 }
 
-.fa, .fas {
-  font-weight: 1000;
-  font-size: 60px;
-  padding-top: 13px;
-}
-
 *::selection {
   background-color: var(--highlight);
 }
@@ -688,11 +682,17 @@ button:focus {
     background-color: var(--white);
     font-size: 40px;
   }
-
+  
+  .fa, 
+  .fas {
+  font-size: 50px;
+  padding-top: 10px;
+}
+  
   p, 
   ul, 
   ol, 
-  li{
+  li {
     font-size: 40px; 
   }
 
@@ -821,6 +821,12 @@ button:focus {
     transform: translateY(-60%);
   }
 }
+
+/* @media only screen and (min-width: 600px) {
+  html, body {
+    font-size: 40px;
+  }
+}  */
 
 
 @-webkit-keyframes zoomIn {
@@ -1189,8 +1195,3 @@ button:focus {
 
 
 
-/* @media only screen and (min-width: 600px) {
-  html, body {
-    font-size: 20px;
-  }
-} */
