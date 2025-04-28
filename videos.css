@@ -211,10 +211,17 @@ main .column.right {
   color: #fff;
 }
 .content .button.primary:hover {
-  background: hsla(11, 92%, 43%, 0.884);
+  background: hsla(213, 96%, 9%, 0.728);
 }
 
+.content .button.secondary {
+    background: hsla(11, 92%, 43%, 0.884);
+    color: #fff;
+}
 
+.content .button.secondary:hover {
+    background:  hsla(11, 86%, 26%, 0.74);
+  }
 /* video thumbnail grid */
 .content .video-thumb-grid {
   position: relative;
