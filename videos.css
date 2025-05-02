@@ -16,7 +16,7 @@ html {
 }
 @media (min-width: 641px) {
   html {
-    background: #4b4b4b;
+    background: hsl(213, 92%, 15%);
   }
 }
 body {
