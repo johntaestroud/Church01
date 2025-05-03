@@ -3570,7 +3570,7 @@ textarea {
   display: block;
   position: relative;
   width: 70px;
-  margin: 0 auto 12px;
+  /* margin: 0 auto 12px; */
 }
 
 .footer-logo img,
@@ -4705,14 +4705,14 @@ main {
 .nav-tabs>.li.active>a:focus,
 .nav-tabs>.li.active>a:hover,
 .nav-tabs>.li>a:hover {
-  color: var(--logo-color);
+  color: var(--gold-sp-color);
   cursor: default;
   background-color: #f3f3f3;
   font-size: 1.7rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.5px;
-  /* border-bottom: 5px solid hsla(11, 92%, 43%, 0.884); */
+  /* border-bottom: 5px solid var(--gold-sp-color); */
   transition: 0.5s;
   border-top: none;
   border-left: none;
@@ -5826,7 +5826,7 @@ button {
 a,
 a:hover,
 a:visited {
-  color: #ddd;
+  /* color: #ddd; */
   text-decoration: none;
 }
 
