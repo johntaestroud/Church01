@@ -61,7 +61,7 @@ body {
   font-size: var(--font-size);
   font-family: var(--font-family);
   color: var(--dark-blue);
-  background-color: var(--off-white);
+  background-color: var(--white-sp-color);
   line-height: 1.5em;
   scroll-behavior: smooth;
   transition: background 0.3s ease;
@@ -679,7 +679,7 @@ button:focus {
 
   html,
   body {
-    background-color: var(--white);
+    background-color: var(--white-sp-color);
     font-size: 40px;
   }
   
