@@ -119,7 +119,7 @@ h4 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1em;
 }
 
 h3 {
@@ -685,15 +685,15 @@ button:focus {
   
   .fa, 
   .fas {
-  font-size: 50px;
-  padding-top: 20px;
+  font-size: 30px;
+  /* padding-top: 10px; */
 }
   
   p, 
   ul, 
   ol, 
   li {
-    font-size: 40px; 
+    font-size: 20px; 
   }
 
   h2,
@@ -822,12 +822,12 @@ button:focus {
   }
 }
 
-/* @media only screen and (min-width: 600px) {
-  html, body {
-    font-size: 40px;
-  }
-}  */
 
+@media only screen and (max-width: 600px) {
+  p, ul, ol, li, .fa, .fas {
+      font-size: 40px;
+  }
+}
 
 @-webkit-keyframes zoomIn {
   from {
