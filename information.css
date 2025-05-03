@@ -58,7 +58,7 @@
 
 html,
 body {
-  font-size: var(--font-size);
+  font-size: var(--font-size-large);
   font-family: var(--font-family);
   color: var(--dark-blue);
   background-color: var(--white-sp-color);
@@ -77,7 +77,7 @@ ul {
 
 ul li::before {
   content: "\2022";
-  font-size: 1.5em;
+  font-size: 1.6em;
   position: absolute;
   color: var(--grey-3);
   font-weight: bold;
@@ -87,7 +87,7 @@ ul li::before {
 
 ul ul li::before {
   content: "\25B8";
-  font-size: 1em;
+  font-size: 1.1em;
   margin-left: -1.5em;
 }
 
@@ -119,16 +119,16 @@ h4 {
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
 h4 {
   font-style: italic;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 p {
@@ -694,7 +694,7 @@ button:focus {
   ul, 
   ol, 
   li {
-    font-size: 30px; 
+    font-size: 35px; 
   }
 
   h2,
@@ -826,7 +826,7 @@ button:focus {
 
 @media only screen and (max-width: 600px) {
   p, ul, ol, li, .fa, .fas {
-      font-size: 40px;
+      font-size: 45px;
   }
 }
 
