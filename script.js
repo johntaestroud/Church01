@@ -3285,7 +3285,7 @@ function addEventListener_multi(element, eventNames, handler) {
   }
   
   function simp_setAlbum(index) {
-    simp_cover.innerHTML = simp_a_url[index].dataset.cover ? '<div style="background:url(' + simp_a_url[index].dataset.cover + ') no-repeat;background-size:cover;width:80px;height:80px;"></div>' : '<i class="fa fa-music fa-5x"></i>';
+    simp_cover.innerHTML = simp_a_url[index].dataset.cover ? '<div style="background:url(' + simp_a_url[index].dataset.cover + ') no-repeat;width:80px;height:80px;"></div>' : '<i class="fa fa-music fa-5x"></i>';
     simp_title.innerHTML = simp_source[index].querySelector('.audio-source').innerHTML;
     simp_artist.innerHTML = simp_source[index].querySelector('.simp-desc') ? simp_source[index].querySelector('.simp-desc').innerHTML : '';
   }
