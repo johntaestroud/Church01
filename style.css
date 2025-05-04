@@ -6090,7 +6090,7 @@ a:visited {
 }
 
 #simp ul li:hover {
-  background: var(--gold-sp-color);
+  background: hsl(18deg 22% 61% / 63%);
   color: var(--dark-blue);
 }
 
