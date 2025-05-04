@@ -3210,8 +3210,8 @@ function addEventListener_multi(element, eventNames, handler) {
     
     // ended of the audio
     if (simp_audio.currentTime == simp_audio.duration) {
-      simp_controls.querySelector('.simp-plause').classList.remove('fa-pause');
-      simp_controls.querySelector('.simp-plause').classList.add('fa-play');
+      simp_controls.querySelector('.simp-pause').classList.remove('fa-pause');
+      simp_controls.querySelector('.simp-pause').classList.add('fa-play');
       simp_audio.removeEventListener('timeupdate', simp_initTime);
       
       if (simp_isNext) { //auto load next audio
@@ -3235,7 +3235,7 @@ function addEventListener_multi(element, eventNames, handler) {
     // if readyState more than 2, audio file has loaded
       simp_isLoaded = simp_audio.readyState == 4 ? true : false;
     simp_isStream = simp_audio.duration == 'Infinity' ? true : false;
-    simp_controls.querySelector('.simp-plause').disabled = false;
+    simp_controls.querySelector('.simp-pause').disabled = false;
     simp_progress.disabled = simp_isStream ? true : false;
     if (!simp_isStream) {
       simp_progress.parentNode.classList.remove('simp-load','simp-loading');
@@ -3271,7 +3271,7 @@ function addEventListener_multi(element, eventNames, handler) {
   
   function simp_loadAudio(elem) {
     simp_progress.parentNode.classList.add('simp-loading');
-    simp_controls.querySelector('.simp-plause').disabled = true;
+    simp_controls.querySelector('.simp-pause').disabled = true;
     simp_audio.querySelector('source').src = elem.dataset.src;
     simp_audio.load();
     
@@ -3293,7 +3293,7 @@ function addEventListener_multi(element, eventNames, handler) {
   function simp_changeAudio(elem) {
       simp_isLoaded = false;
     simp_controls.querySelector('.simp-prev').disabled = simp_a_index == 0 ? true : false;
-    simp_controls.querySelector('.simp-plause').disabled = simp_auto_load ? true : false;
+    simp_controls.querySelector('.simp-pause').disabled = simp_auto_load ? true : false;
     simp_controls.querySelector('.simp-next').disabled = simp_a_index == simp_a_url.length-1 ? true : false;
     simp_progress.parentNode.classList.add('simp-load');
     simp_progress.disabled = true;
@@ -3318,8 +3318,8 @@ function addEventListener_multi(element, eventNames, handler) {
     if (simp_auto_load || simp_isPlaying) simp_loadAudio(elem);
     
     if (simp_isPlaying) {
-      simp_controls.querySelector('.simp-plause').classList.remove('fa-play');
-      simp_controls.querySelector('.simp-plause').classList.add('fa-pause');
+      simp_controls.querySelector('.simp-pause').classList.remove('fa-play');
+      simp_controls.querySelector('.simp-pause').classList.add('fa-pause');
     }
   }
   
@@ -3368,9 +3368,9 @@ function addEventListener_multi(element, eventNames, handler) {
     // FIRST AUDIO LOAD =======
     
     // Controls listeners
-    simp_controls.querySelector('.simp-plauseward').addEventListener('click', function(e) {
+    simp_controls.querySelector('.simp-pauseward').addEventListener('click', function(e) {
       var eles = e.target.classList;
-      if (eles.contains('simp-plause')) {
+      if (eles.contains('simp-pause')) {
         if (simp_audio.paused) {
           if (!simp_isLoaded) simp_loadAudio(simp_a_url[simp_a_index]);
           simp_audio.play();
@@ -3470,7 +3470,7 @@ function addEventListener_multi(element, eventNames, handler) {
     simp_elem += '<audio id="audio" preload><source src="" type="audio/mpeg"></audio>';
     simp_elem += '<div class="simp-display"><div class="simp-album w-full flex-wrap"><div class="simp-cover"><i class="fa fa-music fa-5x"></i></div><div class="simp-info"><div class="simp-title">Title</div><div class="simp-artist">Artist</div></div></div></div>';
     simp_elem += '<div class="simp-controls flex-wrap flex-align">';
-    simp_elem += '<div class="simp-plauseward flex flex-align"><button type="button" class="simp-prev fa fa-backward" disabled></button><button type="button" class="simp-plause fa fa-play" disabled></button><button type="button" class="simp-next fa fa-forward" disabled></button></div>';
+    simp_elem += '<div class="simp-pauseward flex flex-align"><button type="button" class="simp-prev fa fa-backward" disabled></button><button type="button" class="simp-pause fa fa-play" disabled></button><button type="button" class="simp-next fa fa-forward" disabled></button></div>';
     simp_elem += '<div class="simp-tracker simp-load"><input class="simp-progress" type="range" min="0" max="100" value="0" disabled/><div class="simp-buffer"></div></div>';
     simp_elem += '<div class="simp-time flex flex-align"><span class="start-time">00:00</span><span class="simp-slash">&#160;/&#160;</span><span class="end-time">00:00</span></div>';
     simp_elem += '<div class="simp-volume flex flex-align"><button type="button" class="simp-mute fa fa-volume-up"></button><input class="simp-v-slider" type="range" min="0" max="100" value="100"/></div>';

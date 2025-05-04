@@ -1822,13 +1822,13 @@ only screen and (min-device-pixel-ratio: 1.5) {
   fill: none;
 }
 
-#shapes-mask .yellow {
-  stroke: #ff0;
+#shapes-mask .blue {
+  stroke: var(--dark-blue);
   fill: none;
 }
 
-#shapes-mask .aqua {
-  stroke: aqua;
+#shapes-mask .gold {
+  stroke: var(--gold-sp-color);
   fill: none;
 }
 
@@ -5808,7 +5808,7 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
 DEALINGS IN THE SOFTWARE. */
 
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('font-awesome/font-awesome.min.css');
 
 *,
 *:before,
@@ -5852,6 +5852,9 @@ a:visited {
 }
 
 /* HTML5 Audio Player with Playlist, source: https://codepen.io/sekedus/pen/ExxjZEz */
+
+
+
 #simp button,
 #simp input,
 #simp img {
@@ -5906,7 +5909,7 @@ a:visited {
   width: 32px;
   height: 32px;
   background: none;
-  color: #ddd;
+  color: var(--dark-blue);
   padding: 7px;
   cursor: pointer;
   border: 0;
@@ -5919,7 +5922,7 @@ a:visited {
 }
 
 #simp .simp-controls button:not([disabled]):hover {
-  background: #4082bc;
+  background: var(--gold-sp-color);
   color: #fff;
 }
 
