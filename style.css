@@ -367,6 +367,10 @@ img::selection {
   font-style: normal;
 }
 
+.cursor-default {
+  cursor: default;
+}
+
 .h1,
 .h2,
 .h3,
