@@ -4716,7 +4716,7 @@ main {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.5px;
-  /* border-bottom: 5px solid var(--gold-sp-color); */
+  border-bottom: 5px solid var(--gold-sp-color);
   transition: 0.5s;
   border-top: none;
   border-left: none;
