@@ -5975,7 +5975,7 @@ a:visited {
 }
 
 #simp .simp-controls .simp-others .simp-active {
-  background: #242f3d;
+  background: var(--gold-sp-color);
 }
 
 #simp .simp-controls .simp-others .simp-shide button {
