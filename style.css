@@ -3777,7 +3777,7 @@ textarea {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    /* background-color: #fff; */
     -webkit-transform: translateX(0);
     transform: translateX(0);
     transition: -webkit-transform 0.65s cubic-bezier(0.694, 0.048, 0.335, 1);
