@@ -6273,7 +6273,7 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 }
 
 #playlist {
-  scrollbar-color: var(--dark-blue) var(--white-sp-color:); 
+  scrollbar-color: var(--dark-blue) var(--white-sp-color); 
   scrollbar-width: thin; 
   overflow: scroll-x;
   padding-top: 15px;
