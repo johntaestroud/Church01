@@ -6158,7 +6158,7 @@ a:visited {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-color: var(--dark-blue) var(--white-color) !important;
-  scrollbar-width: thin;
+  /* scrollbar-width: thin; */
 }
 
 #simp ul::-webkit-scrollbar-track {
@@ -6274,7 +6274,7 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 
 #playlist {
   scrollbar-color: var(--dark-blue) var(--white-color); 
-  scrollbar-width: thin;
+  /* scrollbar-width: thin; */
   overflow: scroll-x;
   padding-top: 15px;
   padding-bottom: 25px;
