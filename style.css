@@ -6293,6 +6293,8 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 
 @media only screen and (max-width: 980px) {
   #playlist {
+    scrollbar-color: var(--dark-blue) var(--white-color);
+    scrollbar-width: thin;
     grid-auto-columns: minmax(var(--playlist-button-mobile-width), 1fr);
     grid-template-columns: repeat(auto-fill,
         minmax(var(--playlist-button-mobile-width), 1fr));
@@ -6300,7 +6302,6 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 }
 
 #playlist button {
-
   aspect-ratio: var(--video-aspect-ratio);
   width: var(--playlist-button-width);
   font-family: var(--player-font);
