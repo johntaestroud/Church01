@@ -6288,12 +6288,16 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
   overflow-x: auto;
 
 }
+#playlist::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
 
 /* MEDIA QUERY for PLAYLIST GRID */
 
 @media only screen and (max-width: 980px) {
   #playlist {
-    scrollbar-color: var(--dark-blue) var(--white-color);
+    scrollbar-color: var(--dark-blue) var(--white-sp-color);
     scrollbar-width: thin;
     grid-auto-columns: minmax(var(--playlist-button-mobile-width), 1fr);
     grid-template-columns: repeat(auto-fill,
