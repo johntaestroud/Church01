@@ -6306,7 +6306,7 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
   width: var(--playlist-button-width);
   font-family: var(--player-font);
   font-size: var(--playlist-button-font-size);
-  color: var(--playlist-button-text-color);
+  /* color: var(--playlist-button-text-color); */
   text-transform: var(--playlist-button-text-transform);
   overflow: hidden;
   border: solid 2px var(--playlist-button-border-color);
