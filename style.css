@@ -6236,6 +6236,23 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 
 /* YOUTUBE PLAYER CSS */
 
+::-webkit-scrollbar {
+    width: 0.7vw;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6e78ff;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #6d75e8;
+}
+
 /* #video-player {
   border: var(--player-border-width) solid var(--player-border-color);
   background-color: var(--player-background-color);
@@ -6288,10 +6305,7 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
   overflow-x: auto;
 
 }
-#playlist::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
+
 
 /* MEDIA QUERY for PLAYLIST GRID */
 
