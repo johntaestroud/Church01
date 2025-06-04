@@ -6245,12 +6245,12 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #6e78ff;
-    border-radius: 3px;
+    background-color: var(--dark-blue);
+    border-radius: 1px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #6d75e8;
+    background-color: #f3f3f3;
 }
 
 /* #video-player {
