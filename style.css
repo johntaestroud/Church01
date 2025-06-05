@@ -6157,8 +6157,8 @@ a:visited {
 #simp ul {
   overflow-y: auto;
   overflow-x: hidden;
-  scrollbar-color: var(--dark-blue) var(--white-color) !important;
-  /* scrollbar-width: thin; */
+  scrollbar-color: var(--dark-blue) var(--white-sp-color) !important;
+  scrollbar-width: thin;
 }
 
 #simp ul::-webkit-scrollbar-track {
@@ -6236,6 +6236,23 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 
 /* YOUTUBE PLAYER CSS */
 
+::-webkit-scrollbar {
+    width: 0.7vw;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-blue);
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #f3f3f3;
+}
+
 /* #video-player {
   border: var(--player-border-width) solid var(--player-border-color);
   background-color: var(--player-background-color);
@@ -6273,8 +6290,8 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 }
 
 #playlist {
-  scrollbar-color: var(--dark-blue) var(--white-color); 
-  /* scrollbar-width: thin; */
+  scrollbar-color: var(--dark-blue) var(--white-sp-color); 
+  scrollbar-width: thin;
   overflow: scroll-x;
   padding-top: 15px;
   padding-bottom: 25px;
