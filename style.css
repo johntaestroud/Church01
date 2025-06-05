@@ -6157,21 +6157,19 @@ a:visited {
 #simp ul {
   overflow-y: auto;
   overflow-x: hidden;
-  scrollbar-color: var(--dark-blue) var(--white-color) !important;
-  /* scrollbar-width: thin; */
 }
 
 #simp ul::-webkit-scrollbar-track {
-  background-color: #2f3841;
+  background-color: var(--white-sp-color);
 }
 
 #simp ul::-webkit-scrollbar {
   width: 6px;
-  background-color: #2f3841;
+  background-color: var(--white-sp-color);
 }
 
 #simp ul::-webkit-scrollbar-thumb {
-  background-color: #73797f;
+  background-color: var(--dark-blue);
 }
 
 /* progress animation */
@@ -6218,26 +6216,12 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 
 /* jQUERY YOUTUBE VIDEO PLAYER */
 
-/* FOR DEMO */
-.parent-container {
-  width: 100%;
-  max-width: var(--parent-container-max-width);
-  margin: 0 auto;
-  padding-top: 50px;
-}
-
-@media only screen and (max-width: 980px) {
-  .parent-container {
-    padding-top: 0;
-  }
-
-}
 
 
-/* YOUTUBE PLAYER CSS */
+/* Scroll Bar */
 
 ::-webkit-scrollbar {
-    width: 0.7vw;
+    width: 0.5vw;
 }
 
 ::-webkit-scrollbar-track {
@@ -6249,9 +6233,15 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
     border-radius: 1px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: #f3f3f3;
-}
+
+
+/* YouTube Playlist Scroll Bar*/
+
+
+
+/* YOUTUBE PLAYER CSS */
+
+
 
 /* #video-player {
   border: var(--player-border-width) solid var(--player-border-color);
@@ -6290,11 +6280,10 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 }
 
 #playlist {
-  scrollbar-color: var(--dark-blue) var(--white-sp-color); 
-  scrollbar-width: thin; 
+  scrollbar-color: var(--dark-blue);
   overflow: scroll-x;
   padding-top: 15px;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
   /* grid layout for playlist */
   display: grid;
   grid-gap: 10px;
@@ -6310,14 +6299,36 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 /* MEDIA QUERY for PLAYLIST GRID */
 
 @media only screen and (max-width: 980px) {
+
+  ::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--dark-blue);
+    border-radius: 1px;
+  }
+
+}
+
+/* @media only screen and (max-width: 980px) {
+  
   #playlist {
     scrollbar-color: var(--dark-blue) var(--white-sp-color);
+    overflow-y: auto; 
+    overflow-x: hidden;
     scrollbar-width: thin;
     grid-auto-columns: minmax(var(--playlist-button-mobile-width), 1fr);
     grid-template-columns: repeat(auto-fill,
         minmax(var(--playlist-button-mobile-width), 1fr));
   }
-}
+  
+} */
+
 
 #playlist button {
   aspect-ratio: var(--video-aspect-ratio);
