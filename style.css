@@ -6280,7 +6280,7 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 }
 
 #playlist {
-  scrollbar-color: var(--dark-blue);
+  scrollbar-color: var(--dark-blue) var(--white-sp-color);
   overflow: scroll-x;
   padding-top: 15px;
   /* padding-bottom: 25px; */
@@ -6315,19 +6315,19 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 
 }
 
-/* @media only screen and (max-width: 980px) {
+ @media only screen and (max-width: 980px) {
   
   #playlist {
     scrollbar-color: var(--dark-blue) var(--white-sp-color);
     overflow-y: auto; 
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scrollbar-width: thin;
     grid-auto-columns: minmax(var(--playlist-button-mobile-width), 1fr);
     grid-template-columns: repeat(auto-fill,
         minmax(var(--playlist-button-mobile-width), 1fr));
   }
   
-} */
+} 
 
 
 #playlist button {
@@ -6337,7 +6337,7 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
   font-size: var(--playlist-button-font-size);
   /* color: var(--playlist-button-text-color); */
   text-transform: var(--playlist-button-text-transform);
-  overflow: hidden;
+  /* overflow: hidden; */
   border: solid 2px var(--playlist-button-border-color);
   filter: brightness(0.7);
   height: 100%;
