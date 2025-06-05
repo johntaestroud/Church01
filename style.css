@@ -6157,8 +6157,8 @@ a:visited {
 #simp ul {
   overflow-y: auto;
   overflow-x: hidden;
-  scrollbar-color: var(--dark-blue) var(--white-sp-color) !important;
-  scrollbar-width: thin;
+  scrollbar-color: var(--dark-blue) var(--white-color) !important;
+  /* scrollbar-width: thin; */
 }
 
 #simp ul::-webkit-scrollbar-track {
@@ -6291,7 +6291,7 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 
 #playlist {
   scrollbar-color: var(--dark-blue) var(--white-sp-color); 
-  scrollbar-width: thin;
+  scrollbar-width: thin; 
   overflow: scroll-x;
   padding-top: 15px;
   padding-bottom: 25px;
@@ -6306,11 +6306,12 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 
 }
 
+
 /* MEDIA QUERY for PLAYLIST GRID */
 
 @media only screen and (max-width: 980px) {
   #playlist {
-    scrollbar-color: var(--dark-blue) var(--white-color);
+    scrollbar-color: var(--dark-blue) var(--white-sp-color);
     scrollbar-width: thin;
     grid-auto-columns: minmax(var(--playlist-button-mobile-width), 1fr);
     grid-template-columns: repeat(auto-fill,
