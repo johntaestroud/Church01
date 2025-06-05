@@ -6280,7 +6280,7 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 }
 
 #playlist {
-  scrollbar-color: #032349 #EBEBEB;
+  /* scrollbar-color: #032349 #EBEBEB; */
   overflow: scroll-x;
   padding-top: 15px;
   /* padding-bottom: 25px; */
