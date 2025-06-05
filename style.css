@@ -6301,7 +6301,7 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
  @media only screen and (max-width: 980px) {
   
   #playlist {
-    scrollbar-color: #032349 #EBEBEB;
+    scrollbar-color: #032349 #EBEBEB !important;
     overflow-y: auto; 
     /* overflow-x: hidden; */
     scrollbar-width: thin;
