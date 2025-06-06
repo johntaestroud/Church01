@@ -6294,17 +6294,37 @@ JQUERY YOUTUBE / IFRAME VIDEO PLAYER WITH PLAYLIST
 
  @media only screen and (max-width: 980px) {
   
-  #playlist {
+  #playlist 
+  /* {
     scrollbar-color: #032349 #EBEBEB !important;
     overflow-y: auto; 
-    /* overflow-x: hidden; */
+    /* overflow-x: hidden; 
     scrollbar-width: thin;
     grid-auto-columns: minmax(var(--playlist-button-mobile-width), 1fr);
     grid-template-columns: repeat(auto-fill,
         minmax(var(--playlist-button-mobile-width), 1fr));
-  }
-  
-} 
+  } */
+
+  /* playlist scrollbar */
+ #playlist {
+   overflow-y: auto;
+   overflow-x: hidden;
+ }
+
+ #playlist::-webkit-scrollbar-track {
+   background-color: var(--white-sp-color);
+ }
+
+ #playlist::-webkit-scrollbar {
+   width: 6px;
+   background-color: var(--white-sp-color);
+ }
+
+ #playlist::-webkit-scrollbar-thumb {
+   background-color: var(--dark-blue);
+ }
+
+ }
 
 
 #playlist button {
