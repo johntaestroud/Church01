@@ -14,6 +14,13 @@
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+<!-- gallery -->
+  <!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css'> -->
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.5/css/lightgallery-bundle.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.5/css/lg-thumbnail.min.css'>
+  
 
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -335,7 +342,7 @@
       <div class="section-mask"></div>
       <div class="content">
         <div class="section-text-mask">
-          <h4 class="h5 section-subtitle cursor-default">Awake to righteousness, and sin not; for some have not the
+          <h4 class="h5 section-subtitle cursor-default" style="margin-bottom: 65px;">Awake to righteousness, and sin not; for some have not the
             knowledge of God: I speak this to your shame.</h4>
         </div>
 
@@ -350,13 +357,13 @@
 
             <!-- YouTube iFrame Embed - live video src insert below src -->
             <iframe id="YouTube-Iframe" class="lazyload"
-              src="https://www.youtube.com/embed/C1h-AuB-CDg?si=ra9x9SH2i64mbSVp" frameborder="0"
+              src="https://www.youtube.com/embed/OlGKH8TA4A0" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
 
             <!-- VIDEO CAPTION - live video caption -->
 
-            <div id="video-caption">Sunday Service 09/01/2025 Testing</div>
+            <div id="video-caption">Sunday Service 06/15/2025 Testing</div>
 
             <!-- BEGIN PLAYLIST CONTAINER  -->
 
@@ -380,7 +387,7 @@ Playlist button image is called from YouTube.  Uses the Video ID.
 EASY WAY - copy a button and change out the
 YouTube video ID with the new one and edit the caption.  Done!
 
--->
+            -->
               <button class="lazyload active" data-bg=""
                 data-iframe="https://www.youtube.com/embed/C1h-AuB-CDg?autoplay=1" rel="0" data-caption="test">vidtest1</button>
 
@@ -418,6 +425,10 @@ YouTube video ID with the new one and edit the caption.  Done!
         </section>
 
         <!-- END VIDEO SECTION  -->
+
+       <!-- photo gallery start -->
+        
+        <!-- photo gallery end -->
 
         <div class="section-text-mask">
           <h2 class="h3 section-title"></h2>
@@ -634,7 +645,8 @@ YouTube video ID with the new one and edit the caption.  Done!
       </div>
     </section>
 
-    <section class="section mobile-only">
+  <!-- old Insert  -->
+     <section class="section mobile-only">
       <div class="section-mask"></div>
       <!-- <div class="content">
                 <div class="button-content text-center">
@@ -651,82 +663,218 @@ YouTube video ID with the new one and edit the caption.  Done!
             members of that
             one body, being many, are one body: so also is Christ.</h4>
         </div>
+        
         <div class="section-text-mask">
           <h2 class="h3 section-title"></h2>
         </div>
       </div>
-      <div class="inner-container hidden">
-        <div class="experiments-mask-reveal">
-          <span></span>
-          <span></span>
-        </div>
-        <div class="inner-container">
-          <!-- <a href="" target="_blank" rel="noopener" class="experiment"> -->
-          <a class="experiment">
-            <!-- <div class="experiment-mask"></div>
-                    <div class="experiment-number-mask">
-                      <span>01</span>
-                    </div> -->
-            <!-- <div class="experiment-circle">
-                      <div class="experiment-image"></div>
-                    </div> -->
 
-            <!-- <div class="experiment-title-area">
-                <div class="experiment-title-label"></div>
-                <div class="experiment-title"></div>
-              </div> -->
+      <!-- inner container start -->
+       <!-- Resource https://codepen.io/pehaa/full/zYxbxQg  Start-->
+      <style>
+/* body {
+  font-family: Hepta Slab, sans-serif;
+  font-weight: 500;
+  background: #efecdb;
+  color: #5D4037;
+} */
+/* hide scrollbar */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
 
-            <!-- <div class="experiment-number-area">&nbsp;</div> -->
-          </a>
-          <a rel="noopener" class="experiment">
-            <div class="experiment-mask"></div>
-            <div class="experiment-number-mask">
-              <span>02</span>
-            </div>
-            <div class="experiment-circle">
-              <div class="experiment-image"></div>
-            </div>
-            <div class="experiment-title-area">
-              <div class="experiment-title-label">Pastor</div>
-              <div class="experiment-title">Troy Jones</div>
-            </div>
-            <!-- <div class="experiment-number-area">&nbsp;</div> -->
-          </a>
-          <a rel="noopener" class="experiment">
-            <div class="experiment-mask"></div>
-            <div class="experiment-number-mask">
-              <span>03</span>
-            </div>
-            <div class="experiment-circle">
-              <div class="experiment-image"></div>
-            </div>
-            <div class="experiment-title-area">
-              <div class="experiment-title-label">Minister</div>
-              <div class="experiment-title">Darren Milton</div>
-            </div>
-            <!-- <div class="experiment-number-area">&nbsp;</div> -->
-          </a>
-          <a rel="noopener" class="experiment">
-            <!-- <div class="experiment-mask"></div>
-                    <div class="experiment-number-mask">
-                      <span>04</span>
-                    </div>
-                    <div class="experiment-circle">
-                      <div class="experiment-image"></div>
-                    </div> -->
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+.external {
+  overflow: hidden;
+  height: 100vh;
+}
 
-            <!-- <div class="experiment-title-area">
-                <div class="experiment-title-label"></div>
-                <div class="experiment-title"></div>
-              </div> -->
+.horizontal-scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+  transform: rotate(-90deg) translate3d(0,-100vh,0);
+  transform-origin: right top;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  height: 100vw;
+  perspective: 1px;
+	transform-style: preserve-3d;
+  padding-bottom: 10rem;
+}
+.img-wrapper {
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  transform-origin: 50% 50%;
+  transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+  transition: 1s;
+}
 
-            <!-- <div class="experiment-number-area">&nbsp;</div> -->
-          </a>
-        </div>
-      </div>
-    </section>
+.img-wrapper:hover {
+ min-height: 65vh;
+}
 
+.slower {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(-10vh);
+}
+.slower1 {
+  transform: rotate(90deg) translateZ(-.25px) scale(1.05) translateX(0%) translateY(8vh);
+}
+.slower2 {
+  transform: rotate(90deg) translateZ(-.3px) scale(1.3) translateX(0%) translateY(2vh);
+}
+.slower-down {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(0%) translateY(16vh) ;
+}
+.faster {
+  transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(14vh) ;
+}
+.faster1 {
+  transform: rotate(90deg) translateZ(.05px) scale(0.8) translateX(0%) translateY(10vh) ;
+}
+.fastest {
+  transform: rotate(90deg) translateZ(.22px) scale(0.7) translateX(-10vh) translateY(-15vh) ;
+}
+.vertical {
+   transform: rotate(90deg) translateZ(-.15px) scale(1.15) translateX(0%) translateY(0%) ;
+}
+.last {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh) ;
+}
+.scroll-info, header {
+  position: absolute;
+  left: 1rem;
+}
+
+
+/* header {
+  bottom: 1rem;
+} */
+.scroll-info {
+  top: 1rem;
+}
+/* a {
+  color: inherit;
+  font-weight: 500;
   
+} */
+/* h1 {
+  font-weight: 300;
+  font-size: 1rem;
+} */
+
+.img-wrapper a {
+  overflow: hidden;
+  display: block;
+  padding: 1vh ;
+  background: #efecdb;
+  box-shadow: 0 10px 50px #5f2f1182;
+}
+img {
+  max-width: 45vh;
+  max-height: 50vh;
+  transition: .5s;
+  vertical-align: top;
+  filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+}
+a:hover img {
+  filter: none;
+}
+/* p {
+  margin: 0;
+} */
+.scroll-info {
+  display: flex;
+  align-items: center;
+}
+.icon svg {
+    width: 50px;
+    fill: currentcolor;
+    transform: rotate(-90deg);
+}
+</style>
+
+  <div class="external">
+    
+  <div class="horizontal-scroll-wrapper">
+    <p class="scroll-info"> Try scrolling<span class="icon"> <a href="#top" data-scroll="" class="footer-logo no-smoothstate"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" ><path d="M50,67.1c-0.6,0-1.2-0.2-1.8-0.7c-3.8-3.8-7.7-7.7-11.5-11.5c-2.3-2.3,1.2-5.8,3.5-3.5c2.5,2.5,4.9,4.9,7.4,7.4      c0-13.7,0-27.4,0-41.2c0-0.6,0.2-1.2,0.5-1.5c0,0,0,0,0,0c0.4-0.6,1.1-1,2-0.9c13.7,0.3,26.4,7.2,33.5,19.1      C96.5,55.9,84.7,85,60.2,91.6C35.5,98.2,11.6,79.1,11.1,54c-0.1-3.2,4.9-3.2,5,0c0.3,13.8,8.4,26.4,21.3,31.5      c12.5,5,27.1,1.9,36.6-7.5c9.5-9.5,12.5-24.1,7.5-36.6c-4.8-12.1-16.3-20.1-29-21.2c0,12.8,0,25.5,0,38.3      c2.5-2.5,4.9-4.9,7.4-7.4c2.3-2.3,5.8,1.3,3.5,3.5c-3.9,3.9-7.8,7.8-11.8,11.8C51.2,66.9,50.6,67.1,50,67.1z"/></svg></a></span></span></p>
+    <div class="img-wrapper slower">
+      <!-- <a href="" target="_blank" rel="noopener"> -->
+        <img src="https://placehold.co/400" alt="">
+      <!-- </a> -->
+    </div>
+
+    <div class="img-wrapper faster">
+      <!-- <a href="" target="_blank" rel="noopener"> -->
+        <img src="https://placehold.co/400" alt="">
+      <!-- </a> -->
+    </div>
+
+    <div class="img-wrapper slower vertical"> 
+        <img src="https://placehold.co/400" alt="">
+    </div>
+
+    <div class="img-wrapper slower slower-down">
+        <img src="https://placehold.co/400" alt="">
+    </div>
+
+    <div class="img-wrapper">
+        <img src="https://placehold.co/400" alt="">
+    </div>
+
+      <div class="img-wrapper slower">
+      <a href="" target="" rel="noopener">
+        <img src="https://placehold.co/400" alt="">
+      </a>
+    </div>
+
+    <div class="img-wrapper faster1">
+      <a href="" target="" rel="noopener">
+        <img src="https://placehold.co/400" alt="">
+      </a>
+    </div>
+    
+    <div class="img-wrapper slower slower2">
+      <a href="" target="" rel="noopener">
+        <img src="https://placehold.co/400" alt="">
+      </a>
+    </div>
+    
+    <div class="img-wrapper">
+      <a href="" target="" rel="noopener">
+        <img src="https://placehold.co/400" alt="">
+      </a>
+    </div>
+    
+    <div class="img-wrapper slower">
+      <a href="" target="" rel="noopener">
+        <img src="https://placehold.co/400" alt="">
+      </a>
+    </div>
+    
+    <div class="img-wrapper slower last">
+      <a href="" target="" rel="noopener">
+        <img src="https://placehold.co/400" alt="">
+      </a>
+    </div> 
+    
+  </div>
+  
+ 
+</div>
+  
+<!-- Resource https://codepen.io/pehaa/full/zYxbxQg  End -->
+    </section>
+   <!-- gallery end -->
 
     <div class="about-contact">
 
@@ -959,8 +1107,7 @@ YouTube video ID with the new one and edit the caption.  Done!
 <script src="script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
+  
 
 </html>
 
