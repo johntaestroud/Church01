@@ -10,10 +10,11 @@
     z-index: 1000;
     text-align: center;
     color: white;
+    font-size: 24px;
   }
   #lock-screen input[type="password"] {
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -27,7 +28,7 @@
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 55%;
+    top: 57%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -35,7 +36,7 @@
   p {
     position: absolute;
     padding-bottom: 15px;
-    top: 45%;
+    top: 40%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
