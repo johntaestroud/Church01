@@ -13,101 +13,50 @@
   <p>Enter the password to unlock:</p>
   <input type="password" id="password-input">
   <button onclick="unlockPage()">Unlock</button>
-  <a style="text-decoration: none;" href="index.html"><span style="color:white; ">Go Back</span></a>
+  <a style="text-decoration: none;" href="index.html"><span style="color:white;">Go Back</span></a>
 </div>
 
 <section id="content">
   <!-- Your webpage content goes here -->
+ <!-- <header>
+    <a href="index.html"><span style="color: white; text-decoration: none;" >Go Back</span></a>
+    
+  </header> -->
 
+ <a href="index.html"><span style="color: white; text-decoration: none;">Go Back</span></a>
+  <div class="container">
 
- <div id="back-btn">
-  <a href="index.html">Go Back</a>
- </div>
-<div id="playlist">
+    <ul class="tabs">
 
-  <div id="video-dis">
-    <iframe id="display-frame" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
+      <li>
+        <h2>Vid1 Test</h2>
 
-  <div id="v-list" class="video-li">
+        <iframe src="https://www.youtube.com/embed/C1h-AuB-CDg" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-    <div id="vli-info">
-      <div id="upper-info">
-        <div id="li-titles">
-          <div class="title">Church of God of St. Petersburg</div>
-          <div class="sub-title">
-            <a href="https://www.youtube.com/embed/OlGKH8TA4A0" class="channel">Pastor Troy</a>
-            -
-            <span id="video-count">1 / 2</span>
-          </div>
-        </div>
-        <div id="drop-icon"></div>
-      </div>
-      <div id="lower-info">
-        <div id="btn-repeat"></div>
-        <div id="btn-suffle"></div>
-        <div id="btn-save"></div>
-      </div>
-    </div>
+      </li>
 
-    <div id="vli-videos">
-      <div class="video-con active-con" video="https://www.youtube.com/embed/C1h-AuB-CDg">
-        <div class="index title">0</div>
-        <div class="thumb">
-          <img src="" alt="">
-        </div>
-        <div class="v-titles">
-          <div class="title">Church of God 1</div>
-          <div class="sub-title">
-            <a href="https://www.youtube.com/channel/UCD7RHHe-SuFiTWEsC0S1dLg" class="channel" target="_blank">Pastor Troy</a>
-          </div>
-        </div>
-      </div>
-<!--
-      <div class="video-con" video="https://www.youtube.com/embed/trjcpkPgpx0">
-        <div class="index title">0</div>
-        <div class="thumb">
-          <img src="" alt="">
-        </div>
-        <div class="v-titles">
-          <div class="title">Church of God 2</div>
-          <div class="sub-title">
-            <a href="https://www.youtube.com/embed/TVtkzxNOS-8" class="channel" target="_blank">Pastor Troy</a>
-          </div>
-        </div>
-      </div>
+      <li>
+        <h2>Vid2 Test</h2>
 
-      <div class="video-con" video="https://www.youtube.com/embed/DfLmCC0n-Ao">
-        <div class="index title">0</div>
-        <div class="thumb">
-          <img src="" alt="">
-        </div>
-        <div class="v-titles">
-          <div class="title">Church of God 3</div>
-          <div class="sub-title">
-            <a href="https://www.youtube.com/embed/OlGKH8TA4A0" class="channel" target="_blank">Pastor Troy</a>
-          </div>
-        </div>
-      </div>
+        <iframe src="https://www.youtube.com/embed/trjcpkPgpx0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-      <div class="video-con" video="https://www.youtube.com/embed/OlGKH8TA4A0">
-        <div class="index title">0</div>
-        <div class="thumb">
-          <img src="" alt="">
-        </div>
-        <div class="v-titles">
-          <div class="title">Church of God 4</div>
-          <div class="sub-title">
-            <a href="https://www.youtube.com/embed/OlGKH8TA4A0" class="channel" target="_blank">Pastor Troy</a>
-          </div>
-        </div> -->
+      </li>
 
-      </div>
-    </div>
+      <li>
+        <h2>Vid3 Test</h2>
+
+        <iframe src="https://www.youtube.com/embed/TVtkzxNOS-8" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+      </li>
+
+    </ul>
 
   </div>
-</div>
-  <!-- script -->
+</section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+      <script id="rendered-js" >
+
+    </script>
 </section>
 
 <!-- script-->
@@ -116,7 +65,7 @@
 </html>
 
 <!-- Resource
-Copyright (c) YEAR - YOUR NAME - https://codepen.io/RIR360/full/GRWNxpo
+Copyright (c) YEAR - YOUR NAME -
 
 Permission is hereby granted, free of charge, to any person 
 obtaining a copy of this software and associated documentation 

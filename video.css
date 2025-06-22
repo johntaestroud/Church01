@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(27, 25, 25); 
+    background-color: hsl(213, 92%, 15%); 
     z-index: 1000;
     text-align: center;
     color: white;
@@ -43,13 +43,99 @@
   }
   
   @media screen and (max-width:600px) {
-  #lock-screen input[type="password"],
-  #lock-screen button {
+  #lock-screen {
     width: 100%;
   }
 }
 
 /* content */
+body {
+     overflow: hidden;
+     background-color: hsl(213, 92%, 15%);
+}
+
+header {
+  padding: 30px;
+  color: white;
+  width: 100%;
+  background-color: black;
+  flex: 35%;
+  margin-bottom: 5%;
+}
+header p {
+  max-width: 50%;
+  font-size: 18px;
+}
+header p a {
+  color: yellow;
+  text-decoration: none;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+section .container {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  flex: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+section .container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  position: relative;
+  padding: 0 0 56.25%;
+}
+section .container ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  padding: 0 0 56.25%;
+}
+section .container ul li h2 {
+  background-color: black;
+  color: white;
+  position: absolute;
+  height: 80px;
+  top: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: calc(100% / 3);
+  border-left: 1px solid lightgray;
+  font-size: 18px;
+  transition: background-color 200ms ease-in;
+}
+section .container ul li:first-child h2 {
+  border-left: none;
+}
+section .container ul li.active {
+  z-index: 10;
+}
+section .container ul li.active h2 {
+  background-color: hsl(213, 82%, 17%);
+}
+section .container ul li iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 
   /*
@@ -58,7 +144,7 @@
     Varaibles you see in the root are actively in use
 */
 
-:root {
+/* :root {
   --primary: #fbfcfc;
   --active: #f1f1f1;
   --secondary: #767777;
@@ -258,7 +344,7 @@ a.channel:hover {
   justify-content: center;
   text-decoration: none;
   color: white;
-}
+} */
 
 
 /* Resource

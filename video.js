@@ -30,99 +30,47 @@ const lockScreen = document.getElementById('lock-screen');
  Content section
 *****/
 
-// utlity
-function qs(elem) {
-  return document.querySelector(elem);
-}
-function qsa(elem) {
-  return document.querySelectorAll(elem);
-}
+// Title/Tab
+var title = $("ul.tabs li h2");
 
-// globals
-var activeCon = 0,
-totalCons = 0;
+// When Browser Resizes (or Loads) Recalculate Everything
+$(window).on("resize load", function () {
+  // Width of the UL
+  var ulWidth = $("ul.tabs").outerWidth();
 
-// elements
-const v_cons = qsa(".video-con"),
-a_cons = qsa(".active-con"),
-v_count = qs("#video-count"),
-info_btns = qsa("#lower-info div"),
-drop_icon = qs("#drop-icon"),
-video_list = qs("#v-list"),
-display = qs("#display-frame");
+  // How many LIs are in the UL
+  var liCount = $("ul.tabs li").length;
 
-// activate container
-function activate(con) {
-  deactivateAll();
-  indexAll();
-  countVideos(con.querySelector(".index").innerHTML);
-  con.classList.add("active-con");
-  con.querySelector(".index").innerHTML = "►";
-}
-// deactivate all container
-function deactivateAll() {
-  v_cons.forEach(container => {
-    container.classList.remove("active-con");
-  });
-}
-// index containers
-function indexAll() {
-  var i = 1;
-  v_cons.forEach(container => {
-    container.querySelector(".index").innerHTML = i;
-    i++;
-  });
-}
-// update video count
-function countVideos(active) {
-  v_count.innerHTML = active + " / " + v_cons.length;
-}
-// icon activate
-function toggle_icon(btn) {
-  if (btn.classList.contains("icon-active")) {
-    btn.classList.remove("icon-active");
-  } else btn.classList.add("icon-active");
-}
-// toggle video list
-function toggle_list() {
-  if (video_list.classList.contains("li-collapsed")) {
-    drop_icon.style.transform = "rotate(0deg)";
-    video_list.classList.remove("li-collapsed");
-  } else {
-    drop_icon.style.transform = "rotate(180deg)";
-    video_list.classList.add("li-collapsed");
-  }
-}
-function loadVideo(url) {
-  display.setAttribute("src", url);
-}
+  // UL width devided by how many LIs equals the width of each LI
+  var liWidth = ulWidth / liCount;
 
-//******************
-// Main Function heres
-//******************
-window.addEventListener("load", function () {
-  // starting calls
-  indexAll(); // container indexes
-  countVideos(1);
-  activate(v_cons[0]);
-  loadVideo(v_cons[0].getAttribute("video"));
+  //For each H2 add margin-left x its index. This will stagger them appropriately.
+  title.each(function (i) {
+    $(this).css({
+      marginLeft: liWidth * i });
 
-  // Event handeling goes here
-  // on each video container click
-  v_cons.forEach(container => {
-    container.addEventListener("click", () => {
-      activate(container);
-      loadVideo(container.getAttribute("video"));
-    });
-  });
-  // on each button click
-  info_btns.forEach(button => {
-    button.addEventListener("click", () => {
-      toggle_icon(button);
-    });
-  });
-  // drop icon click
-  drop_icon.addEventListener("click", () => {
-    toggle_list();
   });
 });
+
+// Add the class active to just the first LI
+$("ul.tabs li").first().addClass("active");
+
+// Find the SRC of each video and add it as data-url on each LI. This becomes important since we will have to remove the SRC on each IFRAME. A simple show/hide will not stop the video from playing when you click the next tab. You have to remove the URL all together. Unfortunately, this also means each video will start completely over when you click on the tab.
+$("ul.tabs li").each(function (i, video) {
+  var video_url = $(this).find("iframe").attr("src");
+  $(this).attr("data-url", video_url);
+});
+
+// Remove the SRC from each IFRAME contained in each LI. See above for explanation.
+$("ul.tabs li").not(":first-child").find("iframe").attr("src", "");
+
+// Clicking on a title first removes the class active from all other LIs, then adds it to the one you just clicked on. Next, the SRC is removed for all of the other videos and last, the URL from data-url is then added to the SRC for the video in the current LI. (Did that make sense?)
+title.on("click", function () {
+  var video_url = $(this).parent().attr("data-url");
+
+  $("ul.tabs li").removeClass("active");
+  $(this).parent().addClass("active");
+  $("ul.tabs li").find("iframe").attr("src", "");
+  $(this).parent().find("iframe").attr("src", video_url);
+});
+//# sourceURL=pen.js
