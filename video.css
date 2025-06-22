@@ -42,6 +42,12 @@
     transform: translate(-50%, -50%);
   }
   
+  @media screen and (max-width:900px) {
+  #lock-screen input[type="password"],
+  #lock-screen button {
+    width: 100%;
+  }
+}
 
 /* content */
 
@@ -253,6 +259,7 @@ a.channel:hover {
   text-decoration: none;
   color: white;
 }
+
 
 /* Resource
 Copyright (c) YEAR - YOUR NAME - https://codepen.io/RIR360/full/GRWNxpo
