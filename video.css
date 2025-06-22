@@ -42,7 +42,7 @@
     transform: translate(-50%, -50%);
   }
   
-  @media screen and (max-width:900px) {
+  @media screen and (max-width:600px) {
   #lock-screen input[type="password"],
   #lock-screen button {
     width: 100%;
