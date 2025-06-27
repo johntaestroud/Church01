@@ -426,9 +426,59 @@ YouTube video ID with the new one and edit the caption.  Done!
 
         <!-- END VIDEO SECTION  -->
 
-       <!-- photo gallery start -->
-        
-        <!-- photo gallery end -->
+       <!-- private video start -->
+
+  <div class="vidcontent"><span class="content__title">
+      <h1></h1><i></i></span>
+    <div class="keypad">
+      <button class="keypad__button"><span>Unlock <i class="fa fa-lock"></i></span>
+      </button>
+      <div class="keypad__overlay">
+        <dialog class="keypad__body" tabindex="1">
+          <div class="keypad__display">
+            <input class="keypad__response hidden" type="text"/>
+            <input id="keypad-input" type="password" maxlength="4"/>
+          </div>
+          <button class="keypad__key" value="1"><i>1</i>
+          </button>
+          <button class="keypad__key" value="2"><i>2</i>
+          </button>
+          <button class="keypad__key" value="3"><i>3</i>
+          </button>
+          <button class="keypad__key" value="4"><i>4</i>
+          </button>
+          <button class="keypad__key" value="5"><i>5</i>
+          </button>
+          <button class="keypad__key" value="6"><i>6</i>
+          </button>
+          <button class="keypad__key" value="7"><i>7</i>
+          </button>
+          <button class="keypad__key" value="8"><i>8</i>
+          </button>
+          <button class="keypad__key" value="9"><i>9</i>
+          </button>
+          <button class="keypad__key" value="back" id="back"><i class="fa fa-arrow-left"></i>
+          </button>
+          <button class="keypad__key" value="0"><i>0</i>
+          </button>
+          <button class="keypad__key" value="accept" id="accept"><i class="fa fa-check"></i>
+          </button>
+        </dialog>
+      </div>
+    </div>
+    <!-- <a href=""><p class="hidden" id="hiddenresult">Play Video</p></a>  -->
+    <p class="hidden" id="hiddenresult">
+        <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/NlFfld0ePuY?si=o8dwIquDOe5sPjE1" frameborder="0" allowfullscreen></iframe>
+    </p>  
+    <!-- <div class="solution">
+      <button class="solution__button">testing</button>
+      <div class="solution__area hidden"></div>
+    </div> -->
+  </div>
+</body>
+
+ 
+        <!-- private vid end -->
 
         <div class="section-text-mask">
           <h2 class="h3 section-title"></h2>
@@ -973,6 +1023,10 @@ YouTube video ID with the new one and edit the caption.  Done!
   <script src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js'></script>
+
 </body>
 
 </html>
