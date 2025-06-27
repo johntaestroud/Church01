@@ -6642,11 +6642,11 @@ div,
 span,
 button,
 p {
-  font-family: "IBM Plex Mono", monospace;
+  /* font-family: "IBM Plex Mono", monospace; */
 }
 
 h1 {
-  font-family: "Press Start 2P", cursive;
+  /* font-family: "Press Start 2P", cursive; */
   font-size: 3rem;
   line-height: 4rem;
 }
