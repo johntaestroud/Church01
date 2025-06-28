@@ -3535,7 +3535,7 @@ const md5 = (input) => {
 };
 // Click events for the keys
 keys.forEach((key) => {
-    key.addEventListener("click", (e) => {
+    key.addEventListener("touched", (e) => {
         var _a;
         keypadInput.classList.remove("hidden");
         responseArea.classList.add("hidden");
@@ -3600,7 +3600,7 @@ function decrypt(key, data) {
         return String.fromCharCode(parseInt(c, 16) ^ key.charCodeAt(Math.floor(i % key.length)));
     }).join("");
 }
-document.querySelector(".solution__button").addEventListener("click", (e) => {
+document.querySelector(".solution__button").addEventListener("touched", (e) => {
     let solutionArea = document.querySelector(".solution__area");
  
     let solutionKey = decrypt("9996535e07258a7bbfd8b132435c5962", "8;b;a;3");
