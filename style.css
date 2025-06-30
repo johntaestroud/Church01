@@ -6133,13 +6133,14 @@ a:visited {
 }
 
 #simp ul li:hover {
-  background: hsla(17, 15%, 58%, 0.34);
+  /* background: hsla(17, 15%, 58%, 0.34); */
+  background: hsl(0, 0%, 85%);
   color: var(--dark-blue);
 }
 
 #simp ul li.simp-active {
-  background: var(--dark-blue);
-  color: #fff;
+  background: hsl(0, 0%, 85%);
+  color: var(--dark-blue);
 }
 
 #simp ul li .simp-desc {
