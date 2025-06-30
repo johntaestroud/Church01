@@ -1104,7 +1104,8 @@ button[disabled] {
 
 .main-hero {
   height: 100vh;
-  /*background: var(--white-sp-color);*/
+  background: var(--white-sp-color);
+  box-shadow: 0 30px 40px rgba(0,0,0,.1);
   overflow: hidden;
   transition: all 0.3s ease;
 
