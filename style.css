@@ -1098,13 +1098,13 @@ button[disabled] {
   width: 100%;
   display: block;
   position: relative;
-  background-color: var(--dark-blue);
+  /*background-color: var(--dark-blue);*/
   z-index: 2;
 }
 
 .main-hero {
   height: 100vh;
-  background: var(--white-sp-color);
+  /*background: var(--white-sp-color);#/
   overflow: hidden;
   transition: all 0.3s ease;
 
