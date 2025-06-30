@@ -1104,7 +1104,7 @@ button[disabled] {
 
 .main-hero {
   height: 100vh;
-  /*background: var(--white-sp-color);#/
+  /*background: var(--white-sp-color);*/
   overflow: hidden;
   transition: all 0.3s ease;
 
