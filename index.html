@@ -348,88 +348,72 @@
         </div>
 
 
-        <!-- BEGIN VIDEO SECTION -->
+        <!-- BEGIN VIDEO SECTION resource https://codepen.io/EduardoRG/full/vYGvPqj-->
 
-
-        <section class="parent-container">
-
-          <aside id="video-player">
-            <!--  BEGIN PLAYER CONTAINER -->
-
-            <!-- YouTube iFrame Embed - live video src insert below src -->
-            <iframe id="YouTube-Iframe" class="lazyload"
-              src="https://www.youtube.com/embed/C1h-AuB-CDg" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-
-            <!-- VIDEO CAPTION - live video caption -->
-
-            <div id="video-caption">Sunday Service 06/15/2025 Testing</div>
-
-            <!-- BEGIN PLAYLIST CONTAINER  -->
-
-            <div id="playlist">
-
-              <!-- BUTTON MARK-UP  
-
- Button has two data-attribtes that update the
- player when clicked.
-
-1.  data-iframe     = the url of the YouTube Video Embed
-2.  data-caption    = video caption
-
-YouTube URL/SRC must end with ?autoplay=1 for videos to autoplay.
-Data caption is HTML - convert double quotes to single quotes
-in data attribute mark-up - i.e. ' not " - Probably Need to format
-your caption markup too.
-
-Playlist button image is called from YouTube.  Uses the Video ID.
-
-EASY WAY - copy a button and change out the
-YouTube video ID with the new one and edit the caption.  Done!
-
-            -->
-              <button class="lazyload active" data-bg=""
-                data-iframe="https://www.youtube.com/embed/C1h-AuB-CDg?autoplay=1" rel="0" data-caption="test">vidtest1</button>
-
-              <!-- MORE VIDEO BUTTONS  -->
-
-              <button class="lazyload" data-bg=""
-                data-iframe="https://www.youtube.com/embed/trjcpkPgpx0?autoplay=1" data-caption="">vidtest2</button>
-
-              <button class="lazyload" data-bg=""
-                data-iframe="https://www.youtube.com/embed/TVtkzxNOS-8?autoplay=1" data-caption="">vidtest3</button>
-
-              <button class="lazyload" data-bg="" data-iframe="https://www.youtube.com/embed/DfLmCC0n-Ao?autoplay=1"
-                data-caption="">vidtest4</button>
-
-              <button class="lazyload" data-bg="" data-iframe="https://www.youtube.com/embed/TBsKojZei8I?autoplay=1"
-                data-caption="">vidtest5</button>
-
-              <!-- <button class="lazyload" data-bg="" data-iframe=""
-                data-caption="">test</button>
-
-              <button class="lazyload" data-bg="" data-iframe=""
-                data-caption="">test</button>
-
-              <button class="lazyload" data-bg="" data-iframe=""
-                data-caption="">test</button> -->
-
-
-
-            </div> <!-- // END PLAYLIST CONTAINER  -->
-
-          </aside> <!--  // END PLAYER CONTAINER -->
-
-
-
-        </section>
+<script src="video.js"></script>
+<div id="youtube-playlist"></div>
+<script>
+  new Landbot.YoutubePlaylist({
+    container: '#youtube-playlist',
+    // live video insert below
+    defaultVideo: 'https://www.youtube.com/embed/C1h-AuB-CDg',
+    sections: [{
+      title: 'Church of God - St. Petersburg',
+      videos: [{
+          title: "THE DISTINCTION OF GOD'S CHURCH",
+          time: '1:36:31',
+          url: 'https://www.youtube.com/embed/C1h-AuB-CDg?autoplay=1'
+        },
+        {
+          title: 'KEEP YOUR MIND IN PERFECT PEACE',
+          time: '1:07:44',
+          url: 'https://www.youtube.com/embed/TBsKojZei8I?autoplay=1'
+        },
+        {
+          title: "IT'S TIME TO BUILD",
+          time: '1:00:35',
+          url: 'https://www.youtube.com/embed/DfLmCC0n-Ao?autoplay=1'
+        },
+        {
+          title: 'BE SURE YOUR SINS WILL FIND YOU OUT',
+          time: '1:06:08',
+          url: 'https://www.youtube.com/embed/3aT3xqIuHDA?si=aaPXZSnqDaisW7Ik'
+        },
+        {
+          title: 'RISE AND BE NOT AFRAID',
+          time: '46:25',
+          url: 'https://www.youtube.com/embed/EyFGi6BRhOc?si=levGF4znmCWV5p3E'
+        },
+        {
+          title: 'SANCTIFICATION',
+          time: '1:09:04',
+          url: 'https://www.youtube.com/embed/n5h_tsBsIOg?si=QfRQwN-1UxuIvtyC'
+        },
+        {
+          title: 'SANCTIFICATION RECAP',
+          time: '07:05',
+          url: 'https://www.youtube.com/embed/62EkD7sqIhM?si=5p0mPbWk1Xo716wm'
+        },
+        {
+          title: 'ARE WE STRIVING TO ENTER IN?',
+          time: '1:00:49',
+          url: 'https://www.youtube.com/embed/3N9a0VO3ZPo?si=UX3IkarOsjkDrXNH'
+        },
+        {
+          title: 'STRIVING TO ENTER IN THE STRAIGHT GATE PT.2',
+          time: '54:49',
+          url: 'https://www.youtube.com/embed/8nb-dOpXO_Y?si=7R-lH9HeikR07YpI'
+        },
+      ],
+    }]
+  });
+</script>
 
         <!-- END VIDEO SECTION  -->
 
        <!-- private video start -->
 
-  <div class="vidcontent"><span class="content__title">
+  <!-- <div class="vidcontent"><span class="content__title">
       <h1></h1><i></i></span>
     <div class="keypad">
       <button type="button" class="keypad__button"><span>Unlock <i class="fa fa-lock"></i></span>
@@ -467,16 +451,16 @@ YouTube video ID with the new one and edit the caption.  Done!
         </dialog>
       </div>
     </div>
-    <!-- <a href=""><p class="hidden" id="hiddenresult">Play Video</p></a>  -->
+    <a href=""><p class="hidden" id="hiddenresult">Play Video</p></a> 
     <div type="button" class="hidden" id="hiddenresult">
         <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/NlFfld0ePuY?si=o8dwIquDOe5sPjE1" frameborder="0" allowfullscreen></iframe>
     </div>  
-    <!-- <div class="solution">
+    <div class="solution">
       <button class="solution__button">testing</button>
       <div class="solution__area hidden"></div>
-    </div> -->
+    </div>
   </div>
-</body>
+</body> -->
 
  
         <!-- private vid end -->
