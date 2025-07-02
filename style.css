@@ -1098,13 +1098,14 @@ button[disabled] {
   width: 100%;
   display: block;
   position: relative;
-  background-color: var(--dark-blue);
+  /*background-color: var(--dark-blue);*/
   z-index: 2;
 }
 
 .main-hero {
   height: 100vh;
-  background: var(--white-sp-color);
+  /*background: var(--white-sp-color);
+  box-shadow: 0 0px 50px rgba(177, 147, 134, .5);*/
   overflow: hidden;
   transition: all 0.3s ease;
 
@@ -4083,6 +4084,7 @@ section:after {
     -webkit-transform: translateY(-120%);
     transform: translateY(-120%);
     opacity: 0;
+	  
   }
 }
 
