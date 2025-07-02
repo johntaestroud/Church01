@@ -4040,9 +4040,11 @@ section:after {
 }
 
 .section-title {
+  font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman,
+    serif;
   text-align: center;
   margin-bottom: 70px;
-  color: #4a4a4a;
+  /* color: #4a4a4a; */
   transition-delay: 0.18s;
 }
 
