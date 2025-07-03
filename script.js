@@ -3611,10 +3611,10 @@ document.querySelector(".solution__button").addEventListener("click", (e) => {
 
 
 
+// clock start
 
-//
 
-var videoUrl = "https://www.youtube.com/embed/NlFfld0ePuY?si=o8dwIquDOe5sPjE1"; // 
-var videoElement = document.getElementById("#youtube"); 
-videoElement.src = videoUrl; 
-document.body.appendChild(videoElement); 
+
+// clock end
+
+

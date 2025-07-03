@@ -462,8 +462,7 @@
   </div>
 </body> -->
 
- 
-        <!-- private vid end -->
+        <!-- private video end -->
 
         <div class="section-text-mask">
           <h2 class="h3 section-title"></h2>
@@ -609,8 +608,48 @@
       </div>
 
     </section>
-
+<!-- clock start -->
     <section class="section">
+       <!-- <style id="INLINE_PEN_STYLESHEET_ID"></style> -->
+
+
+  <div class="clock-container">
+    <!-- <div class="date" id="current-date"></div> -->
+    <div class="time" id="current-time"></div>
+  </div>
+
+  <script>
+ function updateClock() {
+      const now = new Date();
+
+      // Get day and format it
+      const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      const dayName = days[now.getDay()];
+
+      // Get the date in DD/MM/YY format
+      const day = String(now.getDate()).padStart(2, '0');
+      const month = String(now.getMonth() + 1).padStart(2, '0'); // January is 0
+      const year = String(now.getFullYear()).slice(2);
+
+      // Get time in HH:MM:SS AM/PM format
+      let hours = now.getHours();
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+      hours = hours % 12;
+      hours = hours ? hours : 12; // Hour '0' should be '12'
+      const time = `${hours}:${minutes}:${seconds} ${ampm}`;
+
+      // Display date and time
+      // document.getElementById('current-date').textContent = `${dayName}, ${day}/${month}/${year}`;
+      document.getElementById('current-time').textContent = time;
+    }
+
+    setInterval(updateClock, 1000); // Update every second
+    updateClock(); // Initial call
+  </script>
+
+  <!-- clock end -->
       <div class="div">
         <h3 class="h03"></h3>
         <ul class="ul nav nav-tabs"> <!--nav-justified-->
