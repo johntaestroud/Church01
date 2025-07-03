@@ -614,7 +614,7 @@
 
 
   <div class="clock-container">
-    <!-- <div class="date" id="current-date"></div> -->
+    <div class="date" id="current-date"></div>
     <div class="time" id="current-time"></div>
   </div>
 
@@ -641,7 +641,7 @@
       const time = `${hours}:${minutes}:${seconds} ${ampm}`;
 
       // Display date and time
-      // document.getElementById('current-date').textContent = `${dayName}, ${day}/${month}/${year}`;
+      document.getElementById('current-date').textContent = `${month}/${day}/${year}`;
       document.getElementById('current-time').textContent = time;
     }
 
@@ -663,12 +663,12 @@
           <div id="day1" class="div tab-pane fade in active">
             <div class="div row schedule-item">
               <div class="div col-md-2">
-                <time>7:00 p.m.</time>
+                <time class="h04">7:00 PM</time>
               </div>
               <div class="div col-md-10">
-                <h4 class="h04">Prayer Call</h4>
-                <p style="text-decoration: none;">667-770-1523</p>
-                <p><strong>Access Code: </strong>988043</p>
+                <p class="h04">Prayer Call</p>
+                <p class="h04" style="text-decoration: none;">667-770-1523</p>
+                <p class="h04">Access Code: 988043</p>
               </div>
             </div>
           </div>
@@ -678,11 +678,11 @@
           <div id="day2" class="div tab-pane fade">
             <div class="div row schedule-item">
               <div class="div col-md-2">
-                <time>7:00 p.m.</time>
+                <time class="h04">7:00 PM</time>
               </div>
               <div class="div col-md-10">
-                <h4 class="h04">Zoom Bible Study</h4>
-                <p style="text-decoration: none;">727-580-5902</p>
+                <p class="h04">Zoom Bible Study</p>
+                <p class="h04"style="text-decoration: none;">727-580-5902</p>
                 <!-- <p><strong>Password: </strong>hairlines</p> -->
               </div>
             </div>
@@ -693,22 +693,22 @@
           <div id="day3" class="div tab-pane fade">
             <div class="div row schedule-item">
               <div class="div col-md-2">
-                <time>10:30 a.m.</time>
+                <time>10:30 AM</time>
               </div>
               <div class="div col-md-10">
-                <h4 class="h04">Sunday School</h4>
-                <p></p>
-                <p><strong></strong>1901 62nd Avenue St. Petersburg, FL: Side Bldg</p>
+                <p class="h04">Sunday School</p>
+                
+                <p class="h04">1901 62nd Avenue St. Petersburg, FL: Side Bldg</p>
               </div>
             </div>
             <div class="div row schedule-item">
               <div class="div col-md-2">
-                <time>12:00 p.m.</time>
+                <time class="h04">12:00 PM</time>
               </div>
               <div class="div col-md-10">
-                <h4 class="h04">Sunday Service</h4>
-                <p></p>
-                <p><strong></strong>1901 62nd Avenue St. Petersburg, FL: Main Bldg</p>
+                <p class="h04">Sunday Service</p>
+               
+                <p class="h04">1901 62nd Avenue St. Petersburg, FL: Main Bldg</p>
               </div>
             </div>
           </div>
