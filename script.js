@@ -3489,20 +3489,20 @@ function addEventListener_multi(element, eventNames, handler) {
 // https://github.com/aFarkas/lazysizes
 
 
-$("#video-player button").on("click", function () {
-  // Create data attributes for buttons
-  var iframesrc = $(this).attr("data-iframe");
-  var caption = $(this).attr("data-caption");
-  // Target the respective iframe and caption elements in HTML by ID
-  // and update with content of data-attribute in PLAYLIST BUTTON HTML MARK-UP
-  $("#video-player #video-caption").html(caption);
-  $("#video-player iframe").attr("src", iframesrc);
+// $("#video-player button").on("click", function () {
+//   // Create data attributes for buttons
+//   var iframesrc = $(this).attr("data-iframe");
+//   var caption = $(this).attr("data-caption");
+//   // Target the respective iframe and caption elements in HTML by ID
+//   // and update with content of data-attribute in PLAYLIST BUTTON HTML MARK-UP
+//   $("#video-player #video-caption").html(caption);
+//   $("#video-player iframe").attr("src", iframesrc);
 
-  // Toggle button active class
-  $(this).addClass("active").siblings().removeClass("active");
+//   // Toggle button active class
+//   $(this).addClass("active").siblings().removeClass("active");
 
 
-});
+// });
 
 // Scroll Playlist horizontally with mousewheel on hover
 // Fork from Álvaro
