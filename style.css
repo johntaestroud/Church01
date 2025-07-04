@@ -330,7 +330,7 @@ html {
 }
 
 body {
-  background: #f3f3f3;
+  /* background: #f3f3f3; */
   color: var(--dark-blue);
   font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman,
     serif;
