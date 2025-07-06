@@ -6143,12 +6143,12 @@ a:visited {
 
 #simp ul li:hover {
   /* background: hsla(17, 15%, 58%, 0.34); */
-  background: hsl(18deg 22% 61% / 39%);
+  background: hsl(18deg 22% 61% / 29%);
   color: var(--dark-blue);
 }
 
 #simp ul li.simp-active {
-  background: hsl(18deg 22% 61% / 39%);
+  background: hsl(18deg 22% 61% / 29%);
   color: var(--dark-blue);
 }
 
@@ -6720,7 +6720,7 @@ h1 {
       background: var(--white-sp-color);
     }
     .hr-video-item:hover {
-      background-color: hsl(18deg 22% 61% / 39%)
+      background-color: hsl(18deg 22% 61% / 29%)
     }
     .hr-video-item.active {
       /* background-color: rgba(67, 97, 238, 0.08); */
