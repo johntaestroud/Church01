@@ -5913,7 +5913,7 @@ a:visited {
   font-family: "Segoe UI", Tahoma, sans-serif;
   text-align: initial;
   line-height: initial;
-  /* background: var(--white-sp-color); */
+  background: hsl(18deg 22% 61% / 07%); 
   color: var(--dark-blue);
   margin: 0 auto;
   border-radius: 6px;
@@ -6649,9 +6649,9 @@ h1 {
       display: grid;
       grid-template-columns: minmax(300px, 400px) 1fr;
       gap: 2rem;
-      /* background: var(--hr-white);
+      background: hsl(18deg 22% 61% / 07%);
       border-radius: var(--hr-radius-md);
-      box-shadow: var(--hr-shadow-md); */
+      box-shadow: var(--hr-shadow-md); 
       padding: 1.5rem;
     }
 
