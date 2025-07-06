@@ -6619,7 +6619,7 @@ h1 {
     }
     .hr-tab:hover {
       color: var(--gold-sp-color);
-      background-color: rgba(0, 119, 179, 0.05);
+      /* background-color: rgba(0, 119, 179, 0.05); */
     }
     .hr-tab.active {
       color: var(--gold-sp-color);
