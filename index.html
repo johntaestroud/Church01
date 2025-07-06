@@ -491,11 +491,11 @@
 
           </div>
         </div>
-        <!-- Main Video Content -->
+        <!-- Main Video Content 1 -->
         <div class="hr-video-main">
-          <div class="hr-video-player-container"><iframe src="https://www.youtube.com/embed/h2-9tJhoR0c?si=mpjiMmdOlh_R2oLj" allow="fullscreen" allowfullscreen></iframe></div>
+          <div class="hr-video-player-container"><iframe src="https://www.youtube.com/embed/TVtkzxNOS-8?si=XMJxGl87yKx4QFea&rel=0" allow="fullscreen" allowfullscreen></iframe></div>
           <div class="hr-video-info">
-            <h2 class="hr-video-info-title">Main content 1</h2>
+            <h2 class="hr-video-info-title">Sunday Service</h2>
             <!-- <div class="hr-content-tabs"><div class="hr-content-tab active" data-tab="talk">Talk</div><div class="hr-content-tab" data-tab="speakers">Speakers</div></div> -->
             <div class="hr-inner-tab-content active" data-tab-content="talk"><p class="hr-video-description"></p></div>
             <div class="hr-inner-tab-content" data-tab-content="speakers"><p class="hr-video-speakers"></p></div>
@@ -714,11 +714,11 @@
 
         
 
-        <!-- Main Video Content -->
+        <!-- Main Video Content 2 -->
         <div class="hr-video-main">
-          <div class="hr-video-player-container"><iframe src="https://www.youtube.com/embed/C1h-AuB-CDg" allow="fullscreen" allowfullscreen></iframe></div>
+          <div class="hr-video-player-container"><iframe src="https://www.youtube.com/embed/C1h-AuB-CDg?si=LokvFGxGrsa0-1Q3&rel=0" allow="fullscreen" allowfullscreen></iframe></div>
           <div class="hr-video-info">
-            <h2 class="hr-video-info-title">main content 2</h2>
+            <h2 class="hr-video-info-title">Pastor Troy Jones</h2>
             <!-- <div class="hr-content-tabs"><div class="hr-content-tab active" data-tab="talk">Talk</div><div class="hr-content-tab" data-tab="speakers">Speakers</div></div> -->
             <div class="hr-inner-tab-content active" data-tab-content="talk"><p class="hr-video-description"></p></div>
             <div class="hr-inner-tab-content" data-tab-content="speakers"><p class="hr-video-speakers"></p></div>
@@ -917,11 +917,11 @@
           </div>
         </div>
 
-        <!-- Main Video Content -->
+        <!-- Main Video Content 3 -->
         <div class="hr-video-main">
-          <div class="hr-video-player-container"><iframe src="https://www.youtube.com/embed/NlFfld0ePuY?si=o8dwIquDOe5sPjE1" allow="fullscreen" allowfullscreen></iframe></div>
+          <div class="hr-video-player-container"><iframe src="https://www.youtube.com/embed/3N9a0VO3ZPo?si=HTDyFDO-jXufn9Ur&rel=0" allow="fullscreen" allowfullscreen></iframe></div>
           <div class="hr-video-info">
-            <h2 class="hr-video-info-title">Main Content 3</h2>
+            <h2 class="hr-video-info-title">Minister Darren Milton</h2>
             <!-- <div class="hr-content-tabs"><div class="hr-content-tab active" data-tab="talk">Talk</div><div class="hr-content-tab" data-tab="speakers">Speakers</div></div> -->
             <div class="hr-inner-tab-content active" data-tab-content="talk"><p class="hr-video-description"></p></div>
             <div class="hr-inner-tab-content" data-tab-content="speakers"><p class="hr-video-speakers"></p></div>
@@ -1120,11 +1120,11 @@
           </div>
         </div>
 
-        <!-- Main Video Content -->
+        <!-- Main Video Content 4 -->
         <div class="hr-video-main">
-          <div class="hr-video-player-container"><iframe src="https://www.youtube.com/embed/wWFgIxFVfbo?si=FFdrJ3wAEp6u_CB3" allow="fullscreen" allowfullscreen></iframe></div>
+          <div class="hr-video-player-container"><iframe src="https://www.youtube.com/embed/wWFgIxFVfbo?si=FFdrJ3wAEp6u_CB3&rel=0" allow="fullscreen" allowfullscreen></iframe></div>
           <div class="hr-video-info">
-            <h2 class="hr-video-info-title">Main content 4</h2>
+            <h2 class="hr-video-info-title">Church of God of St. Petersburg Revival</h2>
             <!-- <div class="hr-content-tabs"> -->
               <!-- <div class="hr-content-tab active" data-tab="talk">Talk</div>
               <div class="hr-content-tab" data-tab="speakers">Speakers</div> -->
@@ -1155,7 +1155,7 @@
           platform.querySelectorAll('.hr-video-item').forEach(i => i.classList.remove('active'));
           item.classList.add('active');
           const id = item.dataset.videoId;
-          platform.querySelector('iframe').src = `https://www.youtube.com/embed/${id}`;
+          platform.querySelector('iframe').src = `https://www.youtube.com/embed/${id}&rel=0`;
           platform.querySelector('.hr-video-info-title').textContent = item.dataset.title;
           platform.querySelector('.hr-inner-tab-content[data-tab-content="talk"] .hr-video-description').textContent = item.dataset.description;
           platform.querySelector('.hr-inner-tab-content[data-tab-content="speakers"] .hr-video-speakers').innerHTML = item.dataset.speakers;
