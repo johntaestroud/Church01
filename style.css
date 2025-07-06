@@ -4749,7 +4749,7 @@ main {
 .nav-tabs>.li>a:hover {
   color: var(--gold-sp-color);
   cursor: default;
-  background-color: #f3f3f3;
+  /* background-color: #f3f3f3; */
   font-size: 1.7rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -4759,6 +4759,10 @@ main {
   border-top: none;
   border-left: none;
   border-right: none;
+}
+
+.nav-tabs>.li>a:hover {
+  background-color: hsl(0, 0%, 100%);
 }
 
 
@@ -6165,7 +6169,7 @@ a:visited {
 }
 
 #simp ul::-webkit-scrollbar {
-  width: 1.3px;
+  width: 1.5px;
   background-color: var(--white-sp-color);
 }
 
@@ -6689,8 +6693,7 @@ h1 {
       width: 1px;
     }
     .hr-playlist-scroll::-webkit-scrollbar-track {
-      background: var(--white
-      -color);
+      background: var(--white-color);
       /* border-radius: 3px; */
     }
     .hr-playlist-scroll::-webkit-scrollbar-thumb {
@@ -6796,7 +6799,7 @@ h1 {
       align-items: center;
       gap: 1rem;
       font-size: 0.8rem;
-      color: var(--white-color);
+      color: var(--dark-blue);
     }
     .hr-video-duration {
       display: flex;
