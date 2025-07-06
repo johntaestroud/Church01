@@ -6593,7 +6593,7 @@ h1 {
       --hr-lighter-gray: #e9ecef;
       --hr-white: #ffffff;
       --hr-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-      --hr-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+      --hr-shadow-md: 0 4x 12px rgba(0, 0, 0, 0.1);
       --hr-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
       --hr-radius-sm: 8px;
       --hr-radius-md: 12px;
@@ -6650,7 +6650,7 @@ h1 {
       grid-template-columns: minmax(300px, 400px) 1fr;
       gap: 2rem;
       background: hsl(18deg 22% 61% / 07%);
-      border-radius: var(--hr-radius-md);
+      /* border-radius: var(--hr-radius-md); */
       box-shadow: var(--hr-shadow-md); 
       padding: 1.5rem;
     }
