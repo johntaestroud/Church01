@@ -6603,7 +6603,6 @@ h1 {
 
     /* Platform Tabs */
     .hr-platform-tabs {
-      margin-left: 50px;
       display: flex;
       /* border-bottom: 2px solid var(--hr-lighter-gray); */
       margin-bottom: 1.5rem;
@@ -6647,8 +6646,6 @@ h1 {
 
     /* Video Platform */
     .hr-video-platform {
-      width: 90%;
-      margin: 0 auto;
       display: grid;
       grid-template-columns: minmax(300px, 400px) 1fr;
       gap: 2rem;
