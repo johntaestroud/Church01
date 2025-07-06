@@ -6138,17 +6138,17 @@ a:visited {
 }
 
 #simp ul li:nth-child(odd) {
-  background: rgba(67, 97, 238, 0.03);
+  background: hsl(18deg 22% 61% / 09%);
 }
 
 #simp ul li:hover {
   /* background: hsla(17, 15%, 58%, 0.34); */
-  background: rgba(60, 90, 248, 0.15);
+  background: hsl(18deg 22% 61% / 39%);
   color: var(--dark-blue);
 }
 
 #simp ul li.simp-active {
-  background: rgba(60, 90, 248, 0.15);
+  background: hsl(18deg 22% 61% / 39%);
   color: var(--dark-blue);
 }
 
@@ -6720,7 +6720,7 @@ h1 {
       background: var(--white-sp-color);
     }
     .hr-video-item:hover {
-      background-color: rgba(67, 97, 238, 0.03);
+      background-color: hsl(18deg 22% 61% / 39%)
     }
     .hr-video-item.active {
       /* background-color: rgba(67, 97, 238, 0.08); */
