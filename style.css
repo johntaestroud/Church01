@@ -6138,17 +6138,17 @@ a:visited {
 }
 
 #simp ul li:nth-child(odd) {
-  background: hsl(0, 0%, 95%);
+  background: rgba(67, 97, 238, 0.03);
 }
 
 #simp ul li:hover {
   /* background: hsla(17, 15%, 58%, 0.34); */
-  background: hsl(0, 0%, 85%);
+  background: rgba(60, 90, 248, 0.15);
   color: var(--dark-blue);
 }
 
 #simp ul li.simp-active {
-  background: hsl(0, 0%, 85%);
+  background: rgba(60, 90, 248, 0.15);
   color: var(--dark-blue);
 }
 
@@ -6612,17 +6612,17 @@ h1 {
       padding: 0.75rem 1.5rem;
       cursor: pointer;
       font-weight: 600;
-      color: var(--hr-gray);
+      color: var(--dark-blue);
       position: relative;
       transition: var(--hr-transition);
       white-space: nowrap;
     }
     .hr-tab:hover {
-      color: var(--dark-blue);
+      color: var(--gold-sp-color);
       background-color: rgba(0, 119, 179, 0.05);
     }
     .hr-tab.active {
-      color: var(--dark-blue);
+      color: var(--gold-sp-color);
       font-weight: 700;
     }
     .hr-tab.active::after {
@@ -6632,7 +6632,7 @@ h1 {
       left: 0;
       right: 0;
       height: 2px;
-      background: var(--dark-blue);
+      background: var(--gold-sp-color);
     }
 
     /* Tab Content */
@@ -6723,7 +6723,7 @@ h1 {
       background-color: rgba(67, 97, 238, 0.03);
     }
     .hr-video-item.active {
-      background-color: rgba(67, 97, 238, 0.08);
+      /* background-color: rgba(67, 97, 238, 0.08); */
     }
     .hr-video-item.active::before {
       content: '';
