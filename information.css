@@ -61,10 +61,10 @@ body {
   font-size: var(--font-size-large);
   font-family: var(--font-family);
   color: var(--dark-blue);
-  background-color: var(--white-sp-color);
+  background-color: var(--white-color);
   line-height: 1.5em;
   scroll-behavior: smooth;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease; 
 }
 
 *::selection {
