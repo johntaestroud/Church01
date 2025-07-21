@@ -4729,7 +4729,8 @@ main {
 }
 
 .li {
-  display: inline-block;
+  display: ruby-text;
+  /* display: inline-block; */
   margin: 10px 25px;
 }
 
