@@ -4729,8 +4729,7 @@ main {
 }
 
 .li {
-  display: ruby-text;
-  /* display: inline-block; */
+  display: inline-block;
   margin: 10px 25px;
 }
 
@@ -6602,6 +6601,7 @@ h1 {
   /* font-weight: bold; */
   letter-spacing: 0.5px;
   font-weight: 200;
+  padding-bottom: 10px;
 }
 /* clock end */
 
@@ -7023,8 +7023,9 @@ body {
   background-color: #efeeee;
   /* box-shadow: 10px 10px 12px 0 rgba(0, 0, 0, 0.07); */
   border-radius: 0 0 10px 10px;
-  /* display: flex; */
-  justify-content: flex-end;
+  display: flex;
+  /* justify-content: flex-end; */
+  justify-content: center;
   /* align-items: center; */
   padding: 0 3rem;
   list-style-type: none;
