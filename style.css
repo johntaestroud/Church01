@@ -2338,6 +2338,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 /* words */
 /* .engrave, .quote::before {
+  background: #182747de;
   background: #b1b1b1;
   -webkit-background-clip: text;
           background-clip: text;
@@ -4077,6 +4078,14 @@ section:after {
   margin-bottom: 70px;
   /* color: #4a4a4a; */
   transition-delay: 0.18s;
+
+   background: #0f1a31de;
+  /* background: #b1b1b1; */
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px;
+  
 }
 
 .section-subtitle {
@@ -4836,8 +4845,17 @@ main {
   /* text-transform: uppercase; */
   letter-spacing: 0.5px;
   font-weight: 200;
-}
+  }
 
+  .h04 {
+    font-size: 1.5rem;;
+  background: #0f1a31de;
+  /* background: #b1b1b1; */
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px;
+  }
 
 /*  */
 
@@ -6615,6 +6633,15 @@ h1 {
   margin-bottom: 10px;
   letter-spacing: 0.5px;
   font-weight: 200;
+
+  /* background: #b1b1b1; */
+  /* background: #182747de; */
+  background: #0f1a31de;
+  /* background: #b1b1b1; */
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px;
 }
 
 .time {
@@ -6623,6 +6650,14 @@ h1 {
   letter-spacing: 0.5px;
   font-weight: 200;
   padding-bottom: 10px;
+
+  /* background: #182747de; */
+  background: #0f1a31de;
+  /* background: #b1b1b1; */
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px;
 }
 /* clock end */
 
@@ -6656,6 +6691,7 @@ h1 {
       position: relative;
       transition: var(--hr-transition);
       white-space: nowrap;
+      
     }
     .hr-tab:hover {
       color: var(--gold-sp-color);
