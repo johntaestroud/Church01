@@ -1244,7 +1244,7 @@
 	justify-self: center;
 	overflow: hidden;
 	max-height: 453px;
-	/* border-radius: 40px; */
+	border-radius: 40px;
 	font-family: "Oswald", sans-serif;
 	/* background-color: #131414; */
   box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(195, 193, 198, 0.9), inset -0.2rem -0.2rem 0.5rem #fff, 0.3rem 0.3rem 0.5rem rgba(195, 193, 198, 0.9), -0.2rem -0.2rem 0.4rem hsl(0, 0%, 95%);
@@ -1257,13 +1257,13 @@
 	padding: 50px;
 	max-width: 625px;
 	width: 100%;
-	/* background: linear-gradient(
+	background: linear-gradient(
 		-65deg,
-		rgba(11, 11, 13, 1),
-		rgba(18, 18, 19, 1),
-		rgba(49, 51, 52, 1)
-	); */
-	/* border-radius: 40px; */
+		hsl(18, 22%, 61%),
+		#efeeeeeb,
+		hsl(18, 22%, 61%)
+	);
+	border-radius: 40px;
 	border: transparent;
 }
 
@@ -1385,7 +1385,7 @@
 	justify-content: space-between;
 	padding: 5px 10px;
 	max-height: 30px;
-	/* border-radius: 6px;  */
+	border-radius: 6px; 
 	background-color: transparent;
 	cursor: pointer;
 	transition: all 0.3s;
@@ -1526,7 +1526,7 @@ input:checked + .player__settings-switch {
 
 .player__bar {
 	min-height: 2px;
-	width: 8px;
+	width: 12px;
 	height: 0;
 	max-height: 155px;
 	background: linear-gradient(
@@ -1661,7 +1661,7 @@ input:checked + .player__settings-switch {
 	align-items: center;
 	justify-content: center;
 	/* border-radius: 10px; */
-	background-color: #414143;
+	background-color: hsl(213, 92%, 15%);
 	transition: all 0.3s;
 }
 
@@ -1678,8 +1678,8 @@ input:checked + .player__settings-switch {
 	/* border-radius: 2px; */
 	background: linear-gradient(
 		to right,
-		hsl(0, 0%, 92%) var(--range),
-		hsl(213, 92%, 15%) var(--range)
+		hsl(18, 22%, 61%) var(--range), /*bar*/
+		hsl(0, 0%, 92%) var(--range)
 	);
 	cursor: pointer;
 }
@@ -1762,6 +1762,7 @@ input:checked + .player__settings-switch {
 	.player__volume-btn {
 		width: 40px;
 	}
+
 }
 
 @media screen and (max-width: 460px) {
