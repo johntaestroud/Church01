@@ -4847,10 +4847,11 @@ main {
   font-weight: 200;
   }
 
-  .h04 {
+  .h04, .number {
+    text-decoration: none;
     font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman,
     serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     background: #b19386;
   /* background: #0f1a31de; */
   /* background: #b1b1b1; */
