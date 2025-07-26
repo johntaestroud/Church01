@@ -331,7 +331,10 @@
 
         <!-- BEGIN VIDEO SECTION resource https://codepen.io/ImCaesar/full/pvJxEOO -->
 
-  <div class="custom-hr-video-platform">
+  
+
+        <!-- END VIDEO SECTION  -->
+<div class="custom-hr-video-platform">
     <!-- Main Tabs -->
     <div class="hr-platform-tabs">
       <div class="hr-tab active" data-tab="tab-1">Recent</div>
@@ -345,7 +348,7 @@
     <div class="hr-tab-content active" data-tab-content="tab-1">
       <div class="hr-video-platform">
         <div class="hr-playlist-sidebar">
-          <div class="hr-playlist-header"><h1><i class=""></i>Recent</h1></div>
+          <!-- <div class="hr-playlist-header"><h1><i class=""></i>Recent</h1></div> -->
           <div class="hr-playlist-scroll">
 
             <!-- Playlist Video #01 - data-speakers="" data-description="" removed-->
@@ -488,7 +491,7 @@
     <div class="hr-tab-content" data-tab-content="tab-2">
       <div class="hr-video-platform">
         <div class="hr-playlist-sidebar">
-          <div class="hr-playlist-header"><h1><i class=""></i> Pastor Troy Jones</h1></div>
+          <!-- <div class="hr-playlist-header"><h1><i class=""></i> Pastor Troy Jones</h1></div> -->
           <div class="hr-playlist-scroll">
 
             <!-- Playlist Video #01 -->
@@ -698,7 +701,7 @@
         <div class="hr-video-main">
           <div class="hr-video-player-container"><iframe src="https://www.youtube.com/embed/C1h-AuB-CDg?si=LokvFGxGrsa0-1Q3&rel=0" allow="fullscreen" allowfullscreen></iframe></div>
           <div class="hr-video-info">
-            <h2 class="hr-video-info-title">Pastor Troy Jones</h2>
+            <!-- <h2 class="hr-video-info-title">Pastor Troy Jones</h2> -->
             <!-- <div class="hr-content-tabs"><div class="hr-content-tab active" data-tab="talk">Talk</div><div class="hr-content-tab" data-tab="speakers">Speakers</div></div> -->
             <div class="hr-inner-tab-content active" data-tab-content="talk"><p class="hr-video-description"></p></div>
             <div class="hr-inner-tab-content" data-tab-content="speakers"><p class="hr-video-speakers"></p></div>
@@ -711,7 +714,7 @@
     <div class="hr-tab-content" data-tab-content="tab-3">
       <div class="hr-video-platform">
         <div class="hr-playlist-sidebar">
-          <div class="hr-playlist-header"><h1><i class=""></i> Minister Darren Milton</h1></div>
+          <!-- <div class="hr-playlist-header"><h1><i class=""></i> Minister Darren Milton</h1></div> -->
           <div class="hr-playlist-scroll">
 
             <!-- Playlist Video #01 -->
@@ -914,7 +917,7 @@
     <div class="hr-tab-content" data-tab-content="tab-4">
       <div class="hr-video-platform">
         <div class="hr-playlist-sidebar">
-          <div class="hr-playlist-header"><h1><i class=""></i> Revivals</h1></div>
+          <!-- <div class="hr-playlist-header"><h1><i class=""></i> Revivals</h1></div> -->
           <div class="hr-playlist-scroll">
 
             <!-- Playlist Video #01 -->
@@ -1158,9 +1161,6 @@
       });
     });
   </script>
-
-        <!-- END VIDEO SECTION  -->
-
         <!-- private video start -->
 
         <!-- <div class="vidcontent"><span class="content__title">
@@ -1323,7 +1323,7 @@
 	font-weight: 400;
 	/* text-transform: uppercase; */
 
-   background: #0f1a31de;
+   background: #7e655a;
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -1359,7 +1359,7 @@
 .playlist__list {
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	gap: 10px;
 	overflow-y: auto;
 	max-height: 310px;
 	padding-right: 16px;
@@ -1393,7 +1393,7 @@
 }
 
 .playlist__item.current {
-	background-color: hsl(18deg 22% 61% / 30%);
+	background-color: hsl(18deg 22% 61% / 17%);
 }
 
 .playlist__song,
@@ -1735,6 +1735,7 @@ input:checked + .player__settings-switch {
 	.player-block {
 		flex-direction: column;
 		max-height: 100%;
+    max-width: 80%;
 	}
 
 	.player.open-playlist + .playlist,
@@ -1821,7 +1822,7 @@ input:checked + .player__settings-switch {
 	}
 
 	.playlist__item:hover {
-		background-color: rgba(255, 255, 255, 0.05);
+		background-color: hsl(18deg 22% 61% / 30%);
 	}
 }
 </style>
