@@ -6677,7 +6677,6 @@ h1 {
       --hr-radius-md: 12px;
       --hr-radius-lg: 16px;
       --hr-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-      padding: 50px;
     }
 
     /* Platform Tabs */
