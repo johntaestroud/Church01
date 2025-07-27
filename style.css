@@ -6794,7 +6794,7 @@ h1 {
 
     /* Video Items */
     .hr-video-item {
-      padding: 0.8rem 1.25rem;
+      padding: 0.1rem 1.25rem;
       cursor: pointer;
       transition: var(--hr-transition);
       display: flex;
