@@ -1239,6 +1239,7 @@
 
 /* Player */
 
+
 .player-block {
 	display: flex;
 	align-self: center;
@@ -1759,11 +1760,18 @@ input:checked + .player__settings-switch {
 		width: 40px;
 	}
 
+  .player-block {
+		flex-direction: column;
+		max-height: 100%;
+	}
+
 }
 
 @media screen and (max-width: 460px) {
 	.player-block {
 		/* border-radius: 20px; */
+    flex-direction: column;
+		max-height: 100%;
     
 	}
 
