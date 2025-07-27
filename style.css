@@ -6749,7 +6749,7 @@ h1 {
       /* border-radius: var(--hr-radius-md);
       box-shadow: var(--hr-shadow-md); */
       overflow: hidden;
-      height: 40vh;
+      height: 15vh;
       max-height: 100vh;
       display: flex;
      
