@@ -80,6 +80,7 @@
   --greyDark: #9baacf;
 }
 
+
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1360,7 +1361,7 @@ button[disabled] {
 }
 
 .hero-single-context-stripe .context-stripe-focus-area li {
-  float: left;
+  /* float: left; */
   clear: none;
   width: 31.3333333333%;
   margin-left: 0;
@@ -5956,329 +5957,6 @@ a:visited {
   width: 100%;
 }
 
-/* HTML5 Audio Player with Playlist, source: https://codepen.io/sekedus/pen/ExxjZEz */
-
-
-
-#simp button,
-#simp input,
-#simp img {
-  border: 0;
-}
-
-#simp {
-  max-width: 600px;
-  font-size: 14px;
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  text-align: initial;
-  line-height: initial;
-  background: hsl(18deg 22% 61% / 07%); 
-  color: var(--dark-blue);
-  margin: 0 auto;
-  /* border-radius: 6px; */
-  overflow: hidden;
-  /* border: 1px solid var(--gold-sp-color); */
-  box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(195, 193, 198, 0.9), inset -0.2rem -0.2rem 0.5rem #fff, 0.3rem 0.3rem 0.5rem rgba(195, 193, 198, 0.9), -0.2rem -0.2rem 0.4rem hsl(0, 0%, 95%);
-}
-
-#simp .simp-album {
-  padding: 20px 25px 5px;
-}
-
-#simp .simp-album .simp-cover {
-  margin-right: 20px;
-}
-
-#simp .simp-album .simp-cover img {
-  max-width: 80px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: block;
-}
-
-#simp .simp-album .simp-title {
-  font-size: 120%;
-  font-weight: bold;
-}
-
-#simp .simp-album .simp-artist {
-  font-size: 90%;
-  color: #6c7883;
-}
-
-#simp .simp-controls {
-  padding: 15px;
-}
-
-#simp .simp-controls button {
-  font-size: 130%;
-  width: 32px;
-  height: 32px;
-  background: none;
-  color: var(--dark-blue);
-  padding: 7px;
-  cursor: pointer;
-  border: 0;
-  border-radius: 3px;
-}
-
-#simp .simp-controls button[disabled] {
-  color: #636469;
-  cursor: initial;
-}
-
-#simp .simp-controls button:not([disabled]):hover {
-  background: hsla(17, 15%, 58%, 0.34);
-  color: #fff;
-}
-
-#simp .simp-controls .simp-prev,
-#simp .simp-controls .simp-next {
-  font-size: 100%;
-}
-
-#simp .simp-controls .simp-tracker,
-#simp .simp-controls .simp-volume {
-  flex: 1;
-  margin-left: 10px;
-  position: relative;
-}
-
-#simp .simp-controls .simp-buffer {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: 0;
-  height: 5px;
-  margin-top: -2.5px;
-  border-radius: 100px;
-}
-
-#simp .simp-controls .simp-loading .simp-buffer {
-  -webkit-animation: audio-progress 1s linear infinite;
-  animation: audio-progress 1s linear infinite;
-  background-image: linear-gradient(-45deg, #000 25%, transparent 25%, transparent 50%, #000 50%, #000 75%, transparent 75%, transparent);
-  background-repeat: repeat-x;
-  background-size: 25px 25px;
-  color: transparent;
-}
-
-#simp .simp-controls .simp-time,
-#simp .simp-controls .simp-others {
-  margin-left: 10px;
-}
-
-#simp .simp-controls .simp-volume {
-  max-width: 110px;
-}
-
-#simp .simp-controls .simp-volume .simp-mute {
-  margin-right: 5px;
-}
-
-#simp .simp-controls .simp-others .simp-active {
-  background: var(--gold-sp-color);
-}
-
-#simp .simp-controls .simp-others .simp-shide button {
-  font-size: 100%;
-  padding: 0;
-  width: 24px;
-  height: 14px;
-  display: block;
-}
-
-#simp .simp-controls input[type=range] {
-  -webkit-appearance: none;
-  background: transparent;
-  height: 19px;
-  margin: 0;
-  width: 100%;
-  display: block;
-  position: relative;
-  z-index: 2;
-}
-
-#simp .simp-controls input[type=range]::-webkit-slider-runnable-track {
-  background: rgba(183, 197, 205, .66);
-  height: 5px;
-  border-radius: 2.5px;
-  transition: box-shadow .3s ease;
-  position: relative;
-}
-
-#simp .simp-controls input[type=range]::-moz-range-track {
-  background: rgba(183, 197, 205, .66);
-  height: 5px;
-  border-radius: 2.5px;
-  transition: box-shadow .3s ease;
-  position: relative;
-}
-
-#simp .simp-controls .simp-load .simp-progress::-webkit-slider-runnable-track {
-  background: #2f3841;
-}
-
-#simp .simp-controls .simp-load .simp-progress::-moz-range-track {
-  background: #2f3841;
-}
-
-#simp .simp-controls .simp-loading .simp-progress::-webkit-slider-runnable-track {
-  background: rgba(255, 255, 255, .25);
-}
-
-#simp .simp-controls .simp-loading .simp-progress::-moz-range-track {
-  background: rgba(255, 255, 255, .25);
-}
-
-#simp .simp-controls input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: #fff;
-  height: 13px;
-  width: 13px;
-  margin-top: -4px;
-  cursor: pointer;
-  border-radius: 50%;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, .15), 0 0 0 1px rgba(47, 52, 61, .2);
-}
-
-#simp .simp-controls input[type=range]::-moz-range-thumb {
-  -webkit-appearance: none;
-  background: #fff;
-  height: 13px;
-  width: 13px;
-  cursor: pointer;
-  border-radius: 50%;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, .15), 0 0 0 1px rgba(47, 52, 61, .2);
-}
-
-#simp .simp-footer {
-  padding: 10px 10px 12px;
-  font-size: 90%;
-  text-align: center;
-  opacity: .7;
-  font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman, serif;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 2px;
-  color: #8d756b;
-  font-weight: 700;
-}
-
-#simp .simp-display {
-  overflow: hidden;
-  max-height: 650px;
-  transition: max-height .5s ease-in-out;
-}
-
-#simp .simp-hide {
-  max-height: 0;
-}
-
-/* playlist */
-#simp ul {
-  margin: 5px 0 0;
-  padding: 0;
-  list-style: none;
-  max-height: 245px;
-}
-
-#simp ul li {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-  margin: 0;
-  padding: 8px 20px;
-  cursor: pointer;
-}
-
-#simp ul li:last-child {
-  padding-bottom: 13px;
-}
-
-#simp ul li:nth-child(odd) {
-  background: hsl(18deg 22% 61% / 09%);
-}
-
-#simp ul li:hover {
-  /* background: hsla(17, 15%, 58%, 0.34); */
-  background: hsl(18deg 22% 61% / 29%);
-  color: var(--dark-blue);
-}
-
-#simp ul li.simp-active {
-  background: hsl(18deg 22% 61% / 29%);
-  color: var(--dark-blue);
-}
-
-#simp ul li .simp-desc {
-  font-size: 90%;
-  opacity: .5;
-  margin-left: 5px;
-}
-
-/* playlist scrollbar */
-#simp ul {
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-#simp ul::-webkit-scrollbar-track {
-  background-color: var(--white-sp-color);
-}
-
-#simp ul::-webkit-scrollbar {
-  width: 1.5px;
-  background-color: var(--white-sp-color);
-}
-
-#simp ul::-webkit-scrollbar-thumb {
-  background-color: var(--dark-blue);
-}
-
-/* progress animation */
-@-webkit-keyframes audio-progress {
-  to {
-    background-position: 25px 0;
-  }
-}
-
-@keyframes audio-progress {
-  to {
-    background-position: 25px 0;
-  }
-}
-
-/* mobile */
-
-@media screen and (max-width:600px) {
-
-  #simp {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width:480px) {
-
-  #simp .simp-controls .simp-volume,
-  #simp .simp-controls .simp-others {
-    display: none;
-  }
-
-  #simp .simp-controls .simp-time {
-    margin-right: 10px;
-  }
-}
-
-@media screen and (max-width:370px) {
-
-  #simp .simp-time .simp-slash,
-  #simp .simp-time .end-time {
-    display: none;
-  }
-}
 
 
 /* Photo Gallery
@@ -7107,9 +6785,18 @@ body {
   
 }
 
-.day {
+.dates {
   display: flex;
 }
+
+.day {
+  user-select: none;
+  -webkit-user-select: none; /* For WebKit-based browsers like Safari and Chrome */
+  -moz-user-select: none;    /* For Firefox */
+  -ms-user-select: none;     /* For Internet Explorer and Edge */
+
+}
+
 .nav li.logo {
   margin-right: auto;
   font-family: "Roboto", sans-serif;
