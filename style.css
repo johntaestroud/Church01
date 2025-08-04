@@ -3935,11 +3935,11 @@ textarea {
   height: 220px;
 }
 
-/* section {
+ection {
   width: 100%;
   display: block;
   position: relative;
-} */
+} 
 
 section:after,
 section:before {
