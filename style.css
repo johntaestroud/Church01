@@ -6786,17 +6786,10 @@ body {
   
 }
 
-.dates {
+.day {
   display: flex;
 }
 
-.day {
-  user-select: none;
-  -webkit-user-select: none; /* For WebKit-based browsers like Safari and Chrome */
-  -moz-user-select: none;    /* For Firefox */
-  -ms-user-select: none;     /* For Internet Explorer and Edge */
-
-}
 
 .nav li.logo {
   margin-right: auto;
