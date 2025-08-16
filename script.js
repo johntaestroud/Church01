@@ -3172,17 +3172,12 @@ function newFunction() {
 // });
 
 // Scroll Playlist horizontally with mousewheel on hover
-// Fork from Álvaro
-// https://codepen.io/alvarotrigo/pen/gOmgRzL
-
 
 const scrollContainer = document.querySelector("#playlist");
 scrollContainer.addEventListener("wheel", evt => {
   evt.preventDefault();
   scrollContainer.scrollLeft += evt.deltaY;
 });
-
-
 
 
 // nav start
@@ -3359,3 +3354,4 @@ function changePage() {
 
 
 // video
+

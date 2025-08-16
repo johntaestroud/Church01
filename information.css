@@ -515,6 +515,7 @@ button:focus {
   box-shadow: var(--shadow-inset);
   overflow: hidden;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
 }
 
 #navbar ul:hover {
@@ -532,7 +533,7 @@ button:focus {
 }
 
 #navbar ul::-webkit-scrollbar-thumb {
-  background-color: var(--grey-3);
+  /* background-color: var(--dark-blue); */
   border-radius: var(--border-radius);
   outline: 1px solid slategrey;
 }
@@ -558,6 +559,12 @@ button:focus {
   border-left: 0 solid transparent;
   transition: background 0.3s ease, border-left 0.3s ease;
   user-select: none;
+
+  background: #000000;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px;
 }
 
 .nav-link:hover::before,
@@ -583,18 +590,18 @@ button:focus {
 }
 
 .nav-link:hover {
-  background-color: var(--grey-2);
+  background-color: var(--dark-blue);
 }
 
 .nav-link:active,
 .nav-link:focus {
   outline: 0 !important;
-  background-color: var(--grey-2);
+  background-color: var(--dark-blue);
 }
 
-.nav-link.selected {
+/* .nav-link.selected {
   border-left: 5px solid var(--dark-blue);
-}
+} */
 
 .nav-link.selected:hover {
   border-left: 0 solid transparent;
@@ -623,8 +630,12 @@ button:focus {
   padding: 40px 60px;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
-  transition: margin 0.5s ease, background 0.3s ease, color 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: margin 0.5s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  background: #000000;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px;
 }
 
 #main-doc::after {

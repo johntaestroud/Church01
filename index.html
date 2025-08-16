@@ -27,37 +27,30 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <!-- message sent img -->
   <meta property="og:image" content="images\church.png">
-  <title>testing title</title>
+
   <meta name="description" content="Church of God">
   <link type="text/plain" rel="author" href="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="msapplication-tap-highlight" content="no">
-  <link rel="canonical" href="" itemprop="url">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Church of God">
-  <meta name="" content="">
+  <link rel="canonical" href="" itemprop="url">
   <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/png" href="favicon/favicon.ico">
   <link rel="icon" type="image/png" href="favicon/favicon.svg">
   <link rel="manifest" href="/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#191a21">
-  <meta name="theme-color" content="#191a21">
-  <!-- <meta property="og:url" content="http://churchofgodtest.com/"> -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Church of God">
-  <!-- <meta property="og:image" content="http://churchofgodtestcom/img/social-image.jpg"> -->
   <meta property="og:description" content="Church of God">
   <meta property="og:site_name" content="Site Name">
-
-  <link href="https://plus.google.com/+testing" rel="publisher">
   <meta itemprop="name" content="Church of God">
   <meta itemprop="description" content="Salvation Makes You A Member">
-  <meta itemprop="image" content="http://churchofgodtesting.com/img/social-image.jpg">
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" class="loaded">
-  <div id="loader" class="is-hidden">
+<body translate="no" itemscope="" itemtype="http://schema.org/WebPage" class="loaded">
+  
+  <!-- <div id="loader" class="is-hidden">
     <div class="loader-content is-hidden">
       <div class="stripe-loader">
         <div class="stripe"></div>
@@ -75,7 +68,8 @@
         <div class="stripe"></div>
       </div>
     </div>
-  </div>
+  </div> -->
+
   <div id="page-transition-after"></div>
   <div id="page-wrap">
     <nav itemscope="" itemtype="http://schema.org/SiteNavigationElement" class="main-navigation is-loaded">
@@ -1286,7 +1280,7 @@
 
 .player.open-playlist + .playlist,
 .player.open-playlist + .playlist .playlist__content {
-	width: 500px; /*100% makes expanding less smooth*/
+	width: 525px; /*100% makes expanding less smooth*/
 	opacity: 1;
 }
 
@@ -1400,7 +1394,7 @@
 .playlist__duration {
 	font-size: 0.975rem;
 	font-weight: 300;
-	line-height: 1.4;
+	line-height: 1;
   background: #182747de;
     -webkit-background-clip: text;
           background-clip: text;
@@ -1749,6 +1743,7 @@ input:checked + .player__settings-switch {
 	.player-block {
 		flex-direction: column;
 		max-height: 100%;
+    max-width: 525px;;
 
 	}
 
@@ -2665,12 +2660,12 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="external">
 
         <div class="horizontal-scroll-wrapper">
-          <p class="scroll-info"> Try scrolling<span class="icon"> <a href="#top" data-scroll=""
-                class="footer-logo no-smoothstate"><svg xmlns="http://www.w3.org/2000/svg"
+          <p class="scroll-info"> <!--Try scrolling--><span class="icon"> <a href="#top" data-scroll=""
+                class="footer-logo no-smoothstate"><!--<svg xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100">
                   <path
                     d="M50,67.1c-0.6,0-1.2-0.2-1.8-0.7c-3.8-3.8-7.7-7.7-11.5-11.5c-2.3-2.3,1.2-5.8,3.5-3.5c2.5,2.5,4.9,4.9,7.4,7.4      c0-13.7,0-27.4,0-41.2c0-0.6,0.2-1.2,0.5-1.5c0,0,0,0,0,0c0.4-0.6,1.1-1,2-0.9c13.7,0.3,26.4,7.2,33.5,19.1      C96.5,55.9,84.7,85,60.2,91.6C35.5,98.2,11.6,79.1,11.1,54c-0.1-3.2,4.9-3.2,5,0c0.3,13.8,8.4,26.4,21.3,31.5      c12.5,5,27.1,1.9,36.6-7.5c9.5-9.5,12.5-24.1,7.5-36.6c-4.8-12.1-16.3-20.1-29-21.2c0,12.8,0,25.5,0,38.3      c2.5-2.5,4.9-4.9,7.4-7.4c2.3-2.3,5.8,1.3,3.5,3.5c-3.9,3.9-7.8,7.8-11.8,11.8C51.2,66.9,50.6,67.1,50,67.1z" />
-                </svg></a></span></span></p>
+                </svg>--></a></span></span></p>
 
           <div class="img-wrapper slower gallery">
             <img src="https://ia803101.us.archive.org/22/items/pastor_202507/pastor.png" alt="" class="image">
@@ -2693,14 +2688,14 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
           </div>
 
-          <div class="img-wrapper slower slower-down gallery">
-            <img src="https://ia903102.us.archive.org/31/items/mrs-jones/Mrs%20Jones.png" alt="" class="image">
+          <!-- <div class="img-wrapper slower slower-down gallery">
+            <img src="" alt="" class="image">
               <div class="middle">
               <div class="text">Mrs. Jones</div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="img-wrapper">
+          <!-- <div class="img-wrapper">
             <img src="https://placehold.co/400" alt="">
           </div>
 
@@ -2740,7 +2735,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </a>
           </div>
 
-        </div>
+        </div> -->
 
 
       </div>
