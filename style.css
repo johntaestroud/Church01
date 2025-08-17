@@ -6410,7 +6410,7 @@ h1 {
     /* Tab Content */
     .hr-tab-content {
       display: none;
-      animation: hrFadeIn 0.3s ease;
+      animation: hrFadeIn 0.6s ease;
     }
     .hr-tab-content.active {
       display: block;
