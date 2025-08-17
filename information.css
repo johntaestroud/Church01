@@ -698,6 +698,13 @@ button:focus {
   }
 }
 
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+ html,
+ body {
+  font-size: 50px;
+ }
+}
+
 @media only screen and (max-width: 1224px) {
   :root {
     --nav-max-height: 100vh;
@@ -720,6 +727,7 @@ button:focus {
       rgba(28, 29, 37, 0.05) calc(100% - 1px),
       rgba(28, 29, 37, 0.05) 100%);
   }
+
   
   .fa, 
   .fas {
