@@ -1725,6 +1725,14 @@ input:checked + .player__settings-switch {
 		hue-rotate(66deg) brightness(105%) contrast(104%);
 }
 
+  @media (orientation: landscape) {
+    .player-block {
+    flex-direction: column;
+		max-height: 100%;
+    max-width: 525px; 
+    justify-self: center;
+    }
+  }
 
 
 @media screen and (max-width: 1280px) {
@@ -1733,7 +1741,6 @@ input:checked + .player__settings-switch {
 		max-height: 100%;
     max-width: 525px; 
     justify-self: center;
-
 	}
 
 	.player.open-playlist + .playlist,
