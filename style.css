@@ -6522,8 +6522,8 @@ h1 {
 
     /* Video Thumbnail */
     .hr-video-thumbnail {
-      width: 120px;
-      height: 70px;
+      /* width: 120px;
+      height: 70px; this shows the logo next to the scroll part 1*/
       border-radius: var(--hr-radius-sm);
       /* background-color: var(--white-color); */
       overflow: hidden;
@@ -6532,8 +6532,8 @@ h1 {
       box-shadow: var(--hr-shadow-sm);
     }
     .hr-video-thumbnail img {
-      width: 100%;
-      height: 100%;
+      /* width: 100%;
+      height: 100%; this shows the logo next to the scroll part 2*/
       object-fit: cover;
       transition: var(--hr-transition);
     }
