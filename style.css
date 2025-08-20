@@ -4667,7 +4667,7 @@ main {
 }
 
 .about-me-list li.react:hover svg path {
-  fill: #61dafb;
+  /* fill: #61dafb; */
 }
 
 .about-me-list li.uiux:hover svg path {
