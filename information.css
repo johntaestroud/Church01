@@ -65,6 +65,8 @@ body {
   line-height: 1.5em;
   scroll-behavior: smooth;
   transition: background 0.3s ease; 
+
+
 }
 
 *::selection {
@@ -153,6 +155,7 @@ code {
   padding: 0.5em 1em;
   margin: 1em !important;
   transition: background 0.3s ease;
+  
 }
 
 a {
@@ -560,11 +563,12 @@ button:focus {
   transition: background 0.3s ease, border-left 0.3s ease;
   user-select: none;
 
-  background: #000000;
+  /* background: #000000;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px; */
+  
 }
 
 .nav-link:hover::before,
@@ -590,13 +594,13 @@ button:focus {
 }
 
 .nav-link:hover {
-  background-color: var(--dark-blue);
+  background-color: var(--grey-1);
 }
 
 .nav-link:active,
 .nav-link:focus {
   outline: 0 !important;
-  background-color: var(--dark-blue);
+  background-color: var(--grey-1);
 }
 
 /* .nav-link.selected {
@@ -631,11 +635,22 @@ button:focus {
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   transition: margin 0.5s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  background: #000000;
+  /* background: #000000;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px; */
+   background: linear-gradient(90deg,
+      rgba(28, 29, 37, 0.05) 0,
+      rgba(28, 29, 37, 0.05) 1px,
+      transparent 1px,
+      transparent calc(50% - 1px),
+      rgba(28, 29, 37, 0.05) calc(50% - 1px),
+      rgba(28, 29, 37, 0.05) 50%,
+      transparent 50%,
+      transparent calc(100% - 1px),
+      rgba(28, 29, 37, 0.05) calc(100% - 1px),
+      rgba(28, 29, 37, 0.05) 100%);
 }
 
 #main-doc::after {
