@@ -5,26 +5,16 @@
   --font-family: "Source Sans Pro", Arial, sans-serif;
   --font-monospace: "Inconsolata", monospace;
   --font-size: 12pt;
-  --font-size-large: 18pt;
-  --cornsilk-color:  hsl(48, 100%, 93%);
-  --white-color: hsl(0, 0%, 100%);
-  /* --dark-blue: hsl(206deg 22.72% 48.68%);
-  --darker-body-color: hsl(206deg 22% 41%); */
-  --text-gradient: linear-gradient(hsl(var(--hue-color), 43.04%, 30.39%), hsl(var(--hue-color), 48.47%, 31.75%));
-  --text-color: hsl(var(--hue-color), 4%, 75%);
+  --primary: hsla(11, 92%, 43%, 0.884);
+  --primary-light: #fff;
+  --white: #fff;
   --off-white: whitesmoke;
   --grey-1: #f3f3f3;
   --grey-2: #e4e4e4;
   --grey-3: #d3d3d3;
   --grey-4: #4d4e53;
-  --black: #121212;
+  --blue: hsl(213, 92%, 15%);
   --highlight: var(--grey-2);
-
-  --dark-blue: hsl(213, 92%, 15%);
-  --logo-color: 	hsla(11, 92%, 43%, 0.884);
-  /* --logo-color: 	hsl(11, 79%, 57%); */
-  --gold-sp-color: 	hsl(18, 22%, 61%);
-  --white-sp-color: hsl(0, 0%, 92%);
 
   --page-width: 1000px;
   --nav-min-width: 40px;
@@ -37,19 +27,18 @@
   --shadow-inset: 0 0 10px var(--grey-3) inset;
   --shadow-nav: 1px 0 10px var(--grey-3);
   --shadow-btn: -1px 5px 10px var(--grey-3);
-  --body-font: 'Poppins', sans-serif;
 }
 
 .dark {
-  --white: #5987f6;
+  --white: #212121;
   --off-white: #121212;
-  --grey-1: #f5f6f7;
-  --grey-2: #fafaff;
-  --grey-3: #2c375c;
+  --grey-1: #333;
+  --grey-2: #444;
+  --grey-3: #555;
   --grey-4: #666;
-  --black: #a3a3a3;
+  --blue: #a3a3a3;
   --highlight: #999;
-
+  
   --shadow: 0 0 10px var(--off-white);
   --shadow-nav: 1px 0 10px var(--off-white);
   --shadow-inset: 0 0 10px var(--off-white) inset;
@@ -58,19 +47,25 @@
 
 html,
 body {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size);
   font-family: var(--font-family);
-  color: var(--dark-blue);
-  background-color: var(--white-color);
+  color: var(--blue);
+  background-color: var(--off-white);
   line-height: 1.5em;
   scroll-behavior: smooth;
-  transition: background 0.3s ease; 
-
-
+  transition: background 0.3s ease;
 }
 
 *::selection {
   background-color: var(--highlight);
+}
+
+.image {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul {
@@ -79,7 +74,7 @@ ul {
 
 ul li::before {
   content: "\2022";
-  font-size: 1.6em;
+  font-size: 1.5em;
   position: absolute;
   color: var(--grey-3);
   font-weight: bold;
@@ -89,31 +84,26 @@ ul li::before {
 
 ul ul li::before {
   content: "\25B8";
-  font-size: 1.1em;
+  font-size: 1em;
   margin-left: -1.5em;
 }
 
-ol,
-ul {
+ol, ul {
   margin: 1.5em 0;
   padding-left: 2em;
 }
 
-ol ol,
-ul ul {
+ol ol, ul ul {
   margin: 1em 0;
   padding-left: 1.5em;
 }
 
-ol li,
-ul li {
+ol li, ul li {
   margin: 0.5em 0;
   line-height: 1.5em;
 }
 
-h2,
-h3,
-h4 {
+h2, h3, h4 {
   font-weight: 400;
   line-height: 1.3em;
   padding: 1em 0 0.5em 0;
@@ -121,16 +111,16 @@ h4 {
 }
 
 h2 {
-  font-size: 1.1em;
+  font-size: 2em;
 }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 h4 {
   font-style: italic;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 p {
@@ -155,19 +145,20 @@ code {
   padding: 0.5em 1em;
   margin: 1em !important;
   transition: background 0.3s ease;
-  
 }
 
 a {
   position: relative;
   text-decoration: none;
-  color: var(--dark-blue);
-  transition: background 0.3s ease, color 0.3s ease;
+  color: var(--primary);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
 }
 
 a::before {
-  background-color: var(--dark-blue-light);
-  content: "";
+  background-color: var(--primary-light);
+  content: '';
   height: 1px;
   position: absolute;
   bottom: 0;
@@ -182,7 +173,7 @@ a:active,
 a:focus {
   outline: 0 !important;
   text-decoration: none;
-  color: var(--dark-blue-light);
+  color: var(--primary-light);
 }
 
 a:hover::before,
@@ -211,7 +202,7 @@ a:focus::before {
 
 .hash-link:hover {
   text-decoration: none;
-  color: var(--dark-blue-light);
+  color: var(--primary-light);
 }
 
 .hash-link:active,
@@ -236,7 +227,7 @@ a:focus::before {
   font-size: var(--font-size);
   line-height: 1.3em;
   color: var(--off-white);
-  background: var(--black);
+  background: var(--blue);
   opacity: 0;
   border-radius: 9999px;
   padding: 10px 15px;
@@ -257,7 +248,10 @@ a:focus::before {
   background-color: var(--white);
   width: 100%;
   height: 3px;
-  transition: left 0.5s ease, right 0.5s ease, width 0.5s ease,
+  transition:
+    left 0.5s ease,
+    right 0.5s ease,
+    width 0.5s ease,
     background-color 0.3s ease;
   z-index: 99999;
 }
@@ -286,7 +280,7 @@ a:focus::before {
 
 #reading-progress {
   height: 100%;
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
   transition: width 0.1s linear;
 }
 
@@ -294,19 +288,21 @@ a:focus::before {
   transition: width 0.5s ease !important;
 }
 
-button:active,
-button:focus {
+button:active, button:focus {
   outline: 0 !important;
 }
 
 .btn {
   cursor: pointer;
   background-color: var(--grey-1);
-  color: var(--dark-blue);
+  color: var(--blue);
   border: none;
   outline: 0 !important;
   border-radius: 0;
-  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.5s ease,
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    opacity 0.5s ease,
     box-shadow 0.3s ease !important;
 }
 
@@ -314,8 +310,7 @@ button:focus {
   background-color: var(--grey-2) !important;
 }
 
-.btn:active,
-.btn:focus {
+.btn:active, .btn:focus {
   background-color: var(--grey-3) !important;
   color: var(--grey-1) !important;
 }
@@ -345,7 +340,9 @@ button:focus {
   padding: 5px 7px;
   background: var(--white);
   box-shadow: var(--shadow);
-  transition: box-shadow 0.5s ease, background-color 0.5s ease !important;
+  transition:
+    box-shadow 0.5s ease,
+    background-color 0.5s ease !important;
 }
 
 #settings.nav-left {
@@ -386,7 +383,7 @@ button:focus {
   justify-content: center;
   align-items: center;
   font-size: 1.1em;
-  line-height: 1em;
+  line-height: 1em;  
   border-radius: 50%;
   padding: 12px;
   margin: 1px 0;
@@ -416,7 +413,10 @@ button:focus {
   border-radius: 50%;
   visibility: hidden;
   z-index: 9999;
-  transition: right 0.5s ease, left 0.5s ease, background-color 0.5s ease,
+  transition:
+    right 0.5s ease,
+    left 0.5s ease,
+    background-color 0.5s ease,
     color 0.5s ease !important;
 }
 
@@ -446,7 +446,10 @@ button:focus {
   background-color: var(--white);
   box-shadow: var(--shadow-nav);
   z-index: 9998;
-  transition: width 0.5s ease, height 0s ease, background 0.3s ease,
+  transition:
+    width 0.5s ease,
+    height 0s ease,
+    background 0.3s ease,
     box-shadow 0.3s ease;
 }
 
@@ -507,7 +510,9 @@ button:focus {
   text-align: left;
   font-size: 2em;
   white-space: pre;
-  transition: box-shadow 0.5s ease, color 0.3s ease;
+  transition:
+    box-shadow 0.5s ease,
+    color 0.3s ease;
 }
 
 #navbar ul {
@@ -518,7 +523,6 @@ button:focus {
   box-shadow: var(--shadow-inset);
   overflow: hidden;
   scroll-behavior: smooth;
-  scrollbar-width: thin;
 }
 
 #navbar ul:hover {
@@ -529,14 +533,14 @@ button:focus {
 #navbar ul::-webkit-scrollbar {
   width: 10px;
 }
-
+ 
 #navbar ul::-webkit-scrollbar-track {
   background: var(--grey-1);
   transition: background 5s ease;
 }
-
+ 
 #navbar ul::-webkit-scrollbar-thumb {
-  /* background-color: var(--dark-blue); */
+  background-color: var(--grey-3);
   border-radius: var(--border-radius);
   outline: 1px solid slategrey;
 }
@@ -551,29 +555,25 @@ button:focus {
   content: none;
 }
 
+
 /***   Nav Links   ***/
 
 .nav-link {
   cursor: pointer;
   font-size: 1em;
-  padding: 0.8em 1.25em 0.8em 1em;
+  padding: .8em 1.25em .8em 1em;
   margin: 0;
-  color: var(--dark-blue);
+  color: var(--blue);
   border-left: 0 solid transparent;
-  transition: background 0.3s ease, border-left 0.3s ease;
+  transition:
+    background 0.3s ease,
+    border-left 0.3s ease;
   user-select: none;
-
-  /* background: #000000;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px; */
-  
 }
 
 .nav-link:hover::before,
 .nav-link:active::before,
-.nav-link:focus::before {
+.nav-link:focus::before{
   width: 0;
 }
 
@@ -594,18 +594,18 @@ button:focus {
 }
 
 .nav-link:hover {
-  background-color: var(--grey-1);
+  background-color: hsl(213, 92%, 15%);
 }
 
-.nav-link:active,
-.nav-link:focus {
+.nav-link:active, .nav-link:focus {
   outline: 0 !important;
-  background-color: var(--grey-1);
+  background-color: var(--blue);
+
 }
 
-/* .nav-link.selected {
-  border-left: 5px solid var(--dark-blue);
-} */
+.nav-link.selected {
+  border-left: 5px solid var(--primary);
+}
 
 .nav-link.selected:hover {
   border-left: 0 solid transparent;
@@ -625,8 +625,7 @@ button:focus {
 
 #main-doc {
   position: relative;
-  /* background-color: var(--white); */
- 
+  background-color: var(--white);
   width: 100%;
   min-width: 300px;
   max-width: var(--page-width);
@@ -634,37 +633,12 @@ button:focus {
   padding: 40px 60px;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
-  transition: margin 0.5s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  /* background: #000000;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px; */
-   background: linear-gradient(90deg,
-      rgba(28, 29, 37, 0.05) 0,
-      rgba(28, 29, 37, 0.05) 1px,
-      transparent 1px,
-      transparent calc(50% - 1px),
-      rgba(28, 29, 37, 0.05) calc(50% - 1px),
-      rgba(28, 29, 37, 0.05) 50%,
-      transparent 50%,
-      transparent calc(100% - 1px),
-      rgba(28, 29, 37, 0.05) calc(100% - 1px),
-      rgba(28, 29, 37, 0.05) 100%);
-}
-
-#main-doc::after {
-   background: linear-gradient(90deg,
-      rgba(28, 29, 37, 0.05) 0,
-      rgba(28, 29, 37, 0.05) 1px,
-      transparent 1px,
-      transparent calc(50% - 1px),
-      rgba(28, 29, 37, 0.05) calc(50% - 1px),
-      rgba(28, 29, 37, 0.05) 50%,
-      transparent 50%,
-      transparent calc(100% - 1px),
-      rgba(28, 29, 37, 0.05) calc(100% - 1px),
-      rgba(28, 29, 37, 0.05) 100%);
+  transition:
+    margin 0.5s ease,
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+   box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(195, 193, 198, 0.9), inset -0.2rem -0.2rem 0.5rem #fff, 0.3rem 0.3rem 0.5rem rgba(195, 193, 198, 0.9), -0.2rem -0.2rem 0.4rem hsl(0, 0%, 95%);
 }
 
 #main-doc.nav-left.nav-open {
@@ -685,84 +659,40 @@ button:focus {
 
 @media only screen and (max-width: 1824px) {
   #scroll-btn.nav-left.nav-open {
-    left: calc(
-      50% + (var(--page-width) / 2) + (var(--nav-max-width) / 2) - 90px
-    );
+    left: calc(50% + (var(--page-width) / 2) + (var(--nav-max-width) / 2) - 90px);
     transform: translateX(-50%);
   }
 
   #scroll-btn.nav-left.nav-close {
-    left: calc(
-      50% + (var(--page-width) / 2) + (var(--nav-min-width) / 2) - 90px
-    );
+    left: calc(50% + (var(--page-width) / 2) + (var(--nav-min-width) / 2) - 90px);
     transform: translateX(-50%);
   }
 
   #scroll-btn.nav-right.nav-open {
-    right: calc(
-      50% + (var(--page-width) / 2) + (var(--nav-max-width) / 2) - 90px
-    );
+    right: calc(50% + (var(--page-width) / 2) + (var(--nav-max-width) / 2) - 90px);
     transform: translateX(50%);
   }
 
   #scroll-btn.nav-right.nav-close {
-    right: calc(
-      50% + (var(--page-width) / 2) + (var(--nav-min-width) / 2) - 90px
-    );
+    right: calc(50% + (var(--page-width) / 2) + (var(--nav-min-width) / 2) - 90px);
     transform: translateX(50%);
   }
 }
 
-@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
- html,
- body {
-  font-size: 50px;
- }
-}
-
 @media only screen and (max-width: 1224px) {
+  
   :root {
     --nav-max-height: 100vh;
-    font-size: 40px;
   }
-
-  html,
-  body {
-    background-color: var(--white-sp-color);
-    font-size: 40px;
-     background: linear-gradient(90deg,
-      rgba(28, 29, 37, 0.05) 0,
-      rgba(28, 29, 37, 0.05) 1px,
-      transparent 1px,
-      transparent calc(50% - 1px),
-      rgba(28, 29, 37, 0.05) calc(50% - 1px),
-      rgba(28, 29, 37, 0.05) 50%,
-      transparent 50%,
-      transparent calc(100% - 1px),
-      rgba(28, 29, 37, 0.05) calc(100% - 1px),
-      rgba(28, 29, 37, 0.05) 100%);
-  }
-
   
-  .fa, 
-  .fas {
-  font-size: 70px;
-  /* padding-top: 10px; */
-}
-  
-  p, 
-  ul, 
-  ol, 
-  li {
-    font-size: 35px; 
+  html, body {
+    background-color: var(--white);
   }
-
-  h2,
-  h3,
-  h4 {
+  
+  h2, h3, h4 {
     margin-top: calc(-1 * var(--nav-min-width));
   }
-
+  
   /* Account for nav when using hash links */
   h2::before,
   h3::before,
@@ -774,16 +704,16 @@ button:focus {
     visibility: hidden;
     pointer-events: none;
   }
-
+  
   code {
     margin: 0.5em 0;
   }
-
+  
   #reading-bar {
     left: 0;
     right: 0;
   }
-
+  
   #scroll-btn {
     right: 10px;
     bottom: 20px;
@@ -797,7 +727,7 @@ button:focus {
     min-width: var(--nav-max-width);
     height: var(--nav-min-width);
     box-shadow: var(--shadow-nav);
-    transition: width 0s, height 0.5s;
+    transition: width 0s, height 0.5s;    
   }
 
   #navbar.nav-open {
@@ -805,23 +735,20 @@ button:focus {
     height: var(--nav-max-height);
     padding-bottom: var(--nav-min-width);
   }
-
+  
   #navbar.nav-close {
     width: 100%;
-    height: 90px;
-    /* height: var(--nav-min-width); */
+    height: var(--nav-min-width);
   }
-
+  
   #nav-close-btn {
-    /* height: var(--nav-min-width); */
+    height: var(--nav-min-width);
     width: 100%;
-    height: 90px;
     bottom: 0;
   }
-
+  
   #nav-close-btn.nav-close {
     background-color: var(--grey-1);
-    height: 90px;
   }
 
   #navbar header {
@@ -836,7 +763,7 @@ button:focus {
   #navbar li {
     width: 100%;
   }
-
+  
   #settings-container {
     height: auto;
     width: 100%;
@@ -845,34 +772,33 @@ button:focus {
     padding: 0;
     transform: none;
   }
-
+  
   #settings {
     flex-direction: row;
     background-color: var(--grey-1);
     padding: 5px;
   }
-
+  
   #settings .btn {
     padding: 10px;
     margin: 0 10px;
   }
-
+  
   #nav-side-btn {
     display: none !important;
   }
-
+  
   #zoom-container {
     flex-direction: row-reverse;
     margin: 0;
   }
-
+  
   #main-doc {
-    padding: calc(var(--nav-min-width) + 0.5em) 1.5em
-      calc(var(--nav-min-width) + 1em) 3em;
+    padding: calc(var(--nav-min-width) + 0.5em) 1.5em calc(var(--nav-min-width) + 1em) 3em;
     margin: 0;
     box-shadow: none;
   }
-
+  
   .hash-link .tooltip {
     margin-right: 0;
     margin-bottom: 10px;
@@ -880,19 +806,6 @@ button:focus {
     left: 0;
     top: -60%;
     transform: translateY(-60%);
-  }
-}
-
-
-@media only screen and (max-width: 600px) {
-  p, ul, ol, li, .fa, .fas {
-      font-size: 60px;
-  }
-}
-
-@media only screen and (max-width: 820px) {
-  p, ul, ol, li, .fa, .fas {
-      font-size: 30px;
   }
 }
 
@@ -1259,6 +1172,3 @@ button:focus {
     animation-iteration-count: 1 !important;
   }
 }
-
-
-

@@ -545,7 +545,7 @@ class FontSize {
 
     const style = window
       .getComputedStyle(mainDoc, null)
-      .getPropertyValue('font-size-large');
+      .getPropertyValue('font-size');
 
     let currentSize = parseInt(style);
 
@@ -756,5 +756,3 @@ if (!isSmallScreen()) {
 } else {
   settings.removeEvents();
 }
-//# sourceURL=pen.js
-
