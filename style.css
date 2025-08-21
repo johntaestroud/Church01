@@ -4835,6 +4835,7 @@ main {
   -webkit-transition: opacity 1s linear !important;
   -o-transition: opacity 1s linear !important;
   transition: opacity 1s linear !important;
+  transform: translateZ(0);
 } 
 
 @keyframes fadeInUp {
