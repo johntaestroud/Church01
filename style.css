@@ -4761,11 +4761,11 @@ main {
   /* border-bottom: 1px solid #0a2240; */
 }
 
-.ul {
+/* .ul {
   list-style: none;
-  /* display: flex; */
+  display: flex;
   margin: auto;
-}
+} */
 
 .li {
   display: inline-block;
@@ -4830,11 +4830,26 @@ main {
   text-align: center;
 }
 
-.fade {
+/* .fade {
   opacity: 0;
   -webkit-transition: opacity .75s linear !important;
   -o-transition: opacity .75s linear !important;
   transition: opacity .75s linear !important;
+} */
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation: 1.5s fadeInUp;
 }
 
 .schedule-item {
@@ -6797,6 +6812,7 @@ body {
   justify-content: center;
   /* align-items: center; */
   /* padding: 0 3rem; */
+  padding-right: 4.2rem; /*attempt to center days*/
   list-style-type: none;
   
 }
