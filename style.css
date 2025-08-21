@@ -4832,9 +4832,9 @@ main {
 
 .fade {
   opacity: 0;
-  -webkit-transition: opacity .75s linear !important;
-  -o-transition: opacity .75s linear !important;
-  transition: opacity .75s linear !important;
+  -webkit-transition: opacity .5s linear !important;
+  -o-transition: opacity .5s linear !important;
+  transition: opacity .5s linear !important;
 } 
 
 @keyframes fadeInUp {
