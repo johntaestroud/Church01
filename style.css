@@ -4830,12 +4830,12 @@ main {
   text-align: center;
 }
 
-/* .fade {
+.fade {
   opacity: 0;
   -webkit-transition: opacity .75s linear !important;
   -o-transition: opacity .75s linear !important;
   transition: opacity .75s linear !important;
-} */
+} 
 
 @keyframes fadeInUp {
   0% {
