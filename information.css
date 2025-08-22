@@ -717,6 +717,7 @@ button:active, button:focus {
     top: auto;
     transform: none;
     background-color: var(--grey-1);
+    font-size: 70px;
   }
 
   #navbar {
