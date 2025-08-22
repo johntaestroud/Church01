@@ -4086,8 +4086,8 @@ section:after {
   /* color: #4a4a4a; */
   transition-delay: 0.18s;
   /* background: #b19386; */
-   /* background: #0f1a31de; */
-  background: #b1b1b1;
+   background: #b1938696;
+  /* background: #b1b1b1; */
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -4106,7 +4106,8 @@ section:after {
   /* color: #b19386; */
   /* margin-bottom: 65px; */
   transition-delay: 0.3s;
-    background: #b1b1b1;
+    /* background: #b1b1b1; */
+  background: #b1938696;
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -4884,7 +4885,8 @@ main {
     serif;
     font-size: 1.6rem;
     /* background: #b19386; */
-  background: #0f1a31de;
+  /* background: #0f1a31de; */
+  background: var(--dark-blue);
   /* background: #b1b1b1; */
   -webkit-background-clip: text;
           background-clip: text;
@@ -6345,10 +6347,10 @@ h1 {
   margin-bottom: 10px;
   letter-spacing: 0.5px;
   font-weight: 200;
-
+  background: var(--dark-blue);
   /* background: #b1b1b1; */
   /* background: #b19386; */
-  background: #0f1a31de;
+  /* background: #0f1a31de; */
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -6361,9 +6363,9 @@ h1 {
   letter-spacing: 0.5px;
   font-weight: 200;
   padding-bottom: 10px;
-
+  background: var(--dark-blue);
   /* background: #b19386; */
-  background: #0f1a31de;
+  /* background: #0f1a31de; */
   /* background: #b1b1b1; */
   -webkit-background-clip: text;
           background-clip: text;
@@ -6410,11 +6412,11 @@ h1 {
       
     }
     .hr-tab:hover {
-      color: var(--logo-color);
+      color: var(--gold-sp-color);
       /* background-color: rgba(0, 119, 179, 0.05); */
     }
     .hr-tab.active {
-      color: var(--logo-color);
+      color: var(--gold-sp-color);
       font-weight: 700;
       /* border: 1px solid var(--gold-sp-color); */
       box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(195, 193, 198, 0.9), inset -0.2rem -0.2rem 0.5rem #fff, 0.3rem 0.3rem 0.5rem rgba(195, 193, 198, 0.9), -0.2rem -0.2rem 0.4rem hsl(0, 0%, 95%);
