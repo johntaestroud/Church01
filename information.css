@@ -433,7 +433,7 @@ button:active, button:focus {
 }
 
 #navbar {
-  font-size: 12pt;
+  font-size: 13pt;
   position: fixed;
   padding: 0;
   top: 0;
@@ -774,6 +774,7 @@ button:active, button:focus {
     flex-direction: row;
     background-color: var(--grey-1);
     padding: 5px;
+    font-size: 70px;
   }
   
   #settings .btn {
