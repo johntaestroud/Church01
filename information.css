@@ -4,7 +4,7 @@
 :root {
   --font-family: "Source Sans Pro", Arial, sans-serif;
   --font-monospace: "Inconsolata", monospace;
-  --font-size: 12pt;
+  --font-size: 19pt;
   --primary: hsla(11, 92%, 43%, 0.884);
   --primary-light: #fff;
   --white: #fff;
@@ -61,11 +61,7 @@ body {
 }
 
 .image {
-  width: 100px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 50%;
 }
 
 ul {
