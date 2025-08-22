@@ -4101,11 +4101,16 @@ section:after {
   font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman,
     serif;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 20px;
   letter-spacing: 2px;
-  color: #b19386;
+  /* color: #b19386; */
   /* margin-bottom: 65px; */
   transition-delay: 0.3s;
+    background: #b1b1b1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  text-shadow: #fdfdfd59 1px 2px 1px
 }
 
 .section-subtitle,
@@ -4122,6 +4127,8 @@ section:after {
 .section-text-mask {
   display: block;
   overflow: hidden;
+  margin: auto; 
+  width: 80%;
 }
 
 @media only screen and (min-width: 64.0625em) {
@@ -4597,12 +4604,7 @@ main {
 .about-me-text {
   margin-top: 75px;
   font-size: 1.2em;
-  font-weight: 600;
-  background: #020c21a3;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px;
+  /* font-weight: 600; */
 }
 
 .about-me-text strong {
@@ -6408,11 +6410,11 @@ h1 {
       
     }
     .hr-tab:hover {
-      color: var(--gold-sp-color);
+      color: var(--logo-color);
       /* background-color: rgba(0, 119, 179, 0.05); */
     }
     .hr-tab.active {
-      color: var(--gold-sp-color);
+      color: var(--logo-color);
       font-weight: 700;
       /* border: 1px solid var(--gold-sp-color); */
       box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(195, 193, 198, 0.9), inset -0.2rem -0.2rem 0.5rem #fff, 0.3rem 0.3rem 0.5rem rgba(195, 193, 198, 0.9), -0.2rem -0.2rem 0.4rem hsl(0, 0%, 95%);
@@ -6840,7 +6842,7 @@ body {
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   transition: color 0.2s ease-out, transform 0.2s ease-out;
-  /* color: dimgray; */
+  color: var(--dark-blue);
   
 }
 .nav li:not(.logo):hover {
@@ -6853,7 +6855,7 @@ body {
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white, 4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset, -4px -4px 10px white inset;
 }
 .nav li:not(.logo):hover, .nav li:not(.logo):focus {
-  color: var(--gold-sp-color);
+  color: var(--logo-color);
 }
 
 /* hamburger */
