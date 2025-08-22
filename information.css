@@ -798,9 +798,10 @@ button:active, button:focus {
   }
   
   #main-doc {
-    padding: calc(var(--nav-min-width) + 0.5em) 1.5em calc(var(--nav-min-width) + 1em) 3em;
+    /* padding: calc(var(--nav-min-width) + 0.5em) 1.5em calc(var(--nav-min-width) + 1em) 3em; */
     margin: 0;
     box-shadow: none;
+    font-size: 32px;
   }
   
   .hash-link .tooltip {
