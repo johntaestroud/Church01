@@ -433,13 +433,13 @@ button:active, button:focus {
 }
 
 #navbar {
-  font-size: 13pt;
+  font-size: 12pt;
   position: fixed;
   padding: 0;
   top: 0;
   width: var(--nav-min-width);
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: var(--white);
   box-shadow: var(--shadow-nav);
   z-index: 9998;
@@ -732,17 +732,22 @@ button:active, button:focus {
     width: 100%;
     height: var(--nav-max-height);
     padding-bottom: var(--nav-min-width);
+    font-size: 40px;
   }
   
   #navbar.nav-close {
     width: 100%;
-    height: var(--nav-min-width);
+    height: 70px;
   }
   
   #nav-close-btn {
-    height: var(--nav-min-width);
+    height: 70px;
     width: 100%;
     bottom: 0;
+  }
+
+  .fa, .fas{
+    font-size: 60px !important;
   }
   
   #nav-close-btn.nav-close {
