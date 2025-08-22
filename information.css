@@ -4,7 +4,7 @@
 :root {
   --font-family: "Source Sans Pro", Arial, sans-serif;
   --font-monospace: "Inconsolata", monospace;
-  --font-size: 19pt;
+  --font-size: 18pt;
   --primary: hsla(11, 92%, 43%, 0.884);
   --primary-light: #fff;
   --white: #fff;
@@ -433,6 +433,7 @@ button:active, button:focus {
 }
 
 #navbar {
+  font-size: 12pt;
   position: fixed;
   padding: 0;
   top: 0;
