@@ -801,7 +801,7 @@ button:active, button:focus {
     /* padding: calc(var(--nav-min-width) + 0.5em) 1.5em calc(var(--nav-min-width) + 1em) 3em; */
     margin: 0;
     box-shadow: none;
-    font-size: 32px;
+    font-size: 36px;
   }
   
   .hash-link .tooltip {
